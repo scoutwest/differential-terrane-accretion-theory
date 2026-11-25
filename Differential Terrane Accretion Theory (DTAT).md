@@ -1,14 +1,14 @@
 # Differential Terrane Accretion Theory (DTAT): fragments, motion, collision and recession in a young-earth Flood model
 
 **Status:** Draft 1, written 2026-11-25. This is a reorganisation, not new modelling. It merges the DTAT idea from `Noah's Pangea v1` (`Theories.md`; `Model.md` Sections 13.7-13.11) with the clean-room results in `Noah's Pangea v2` (`Model.md` Phases 2, 3, 5 and 6), and adds one new hypothesis from discussion (the fixed-keel crust slip, Section 8). Every carried item is marked **carried**, **recomputed**, **flagged** or **not carried** (Section 11). The v2 numbers are quoted from its logs, the v1 numbers from its text, and the few other new numbers are arithmetic done by hand in this draft (marked "hand arithmetic"). Two DTAT scripts exist: `scripts/draw_images.py` (the figures) and `scripts/registration_test.py` (test T1, added 2026-11-25, result in Section 8.5).
-**Companion theory:** Cascading Moho Collapse Theory (CMCT), `..\Cascading Moho Collapse Theory (CMCT)\Cascading Moho Collapse Theory (CMCT).md`. CMCT supplies the cause of submergence, the water and the heat constraints. DTAT supplies the sideways motion, the fragments, the collisions and the recession. The interface is in Section 12.
+**Companion theory:** Cascading Keel Decoupling Theory (CKDT), `..\Cascading Keel Decoupling Theory (CKDT)\Cascading Keel Decoupling Theory (CKDT).md`. CKDT supplies the cause of submergence, the water and the heat constraints. DTAT supplies the sideways motion, the fragments, the collisions and the recession. The interface is in Section 12.
 **Nature:** a speculative young-earth creation-science model. Mainstream geoscience rejects its premises. Where a number fails, the failure is stated.
 
 ---
 
 ## 1. Purpose and scope
 
-**Purpose.** Show one physically possible way that, after a flood caused by submergence (CMCT), today's land, mountains and permanently submerged crust could result from many crustal fragments moving at different speeds, colliding or missing each other, without the runaway-subduction heat of Baumgardner's CPT.
+**Purpose.** Show one physically possible way that, after a flood caused by submergence (CKDT), today's land, mountains and permanently submerged crust could result from many crustal fragments moving at different speeds, colliding or missing each other, without the runaway-subduction heat of Baumgardner's CPT.
 
 **Core idea (v1 `Theories.md`, kept).** Pangea did not break into a few tidy plates. It broke into hundreds of fragments (terranes and provinces) that moved at different speeds. Fragments that collided while moving fast were pushed up out of the water, as India was pushed into Asia. Fragments that never collided stayed low or submerged, as Zealandia is (about 94% submerged today). The mapped seams between terranes (sutures) are the scars of those collisions.
 
@@ -19,15 +19,15 @@
 - The slip layer and energy that let crust move (H10) and the origin of the ocean floor left behind (H9) (Sections 7-8).
 
 **What DTAT is not for.**
-- It is not the cause of the flood. Submergence is CMCT's (collapse of a layer at the crust base, released water). DTAT's v1 text assumed a keel-loss submergence (CKDT) that CMCT has struck (P9). DTAT now starts from "the land is already submerged, by whatever CMCT supplies."
-- It does not supply the water or the heat budget. Those are CMCT's (Section 3).
-- It does not cover the post-Flood ice age. That is a separate planned study (CMCT Section 27.5).
+- It is not the cause of the flood. Submergence is CKDT's (collapse of a layer at the crust base, released water). DTAT's v1 text assumed a keel-loss submergence (old CKDT) that CKDT has struck (P9). DTAT now starts from "the land is already submerged, by whatever CKDT supplies."
+- It does not supply the water or the heat budget. Those are CKDT's (Section 3).
+- It does not cover the post-Flood ice age. That is a separate planned study (CKDT Section 27.5).
 
 ---
 
 ## 2. Premises and rules
 
-DTAT inherits CMCT's premises unchanged. They are restated here so the file can be read alone; if the two ever differ, CMCT's table is the source.
+DTAT inherits CKDT's premises unchanged. They are restated here so the file can be read alone; if the two ever differ, CKDT's table is the source.
 
 | ID | Premise or rule |
 |----|-----------------|
@@ -39,7 +39,7 @@ DTAT inherits CMCT's premises unchanged. They are restated here so the file can 
 | P6 | Target end state: seven continents, today's ten highest peaks (8,091-8,849 m), isostatic uplift with overshoot and rebound, and a post-Flood ice age (P8). |
 | P7 | CPT runaway subduction is rejected. |
 | P8 | Leave room for a post-Flood ice age. |
-| P9 | **Keel preservation (from CMCT).** No mechanism may conflict with the deep keels (150-250 km) that cratons have today. For DTAT this means: after any motion, each craton must sit over a keel. It does not have to be the keel it started on (Section 8). |
+| P9 | **Keel preservation (from CKDT).** No mechanism may conflict with the deep keels (150-250 km) that cratons have today. For DTAT this means: after any motion, each craton must sit over a keel. It does not have to be the keel it started on (Section 8). |
 | R1 | Obstacles and failures are written down with their status (Section 14). |
 | R2 | Use they/them for anyone whose pronouns are not stated. |
 | R3 (DTAT) | Where a v1 and a v2 number disagree, v2 (clean-room) is used unless this file says otherwise. |
@@ -47,9 +47,9 @@ DTAT inherits CMCT's premises unchanged. They are restated here so the file can 
 
 ---
 
-## 3. Constraints taken from CMCT and the heat analysis
+## 3. Constraints taken from CKDT and the heat analysis
 
-Not re-derived here. Numbers are from CMCT Section 3 and v2 Phase 1.
+Not re-derived here. Numbers are from CKDT Section 3 and v2 Phase 1.
 
 - **H1 (area).** Fresh hot oceanic lithosphere exposed to seawater ≲ 3.6×10¹¹ m².
 - **H2 (rate).** Heat into the ocean ≲ 4.4×10¹⁸ W averaged.
@@ -58,7 +58,7 @@ Not re-derived here. Numbers are from CMCT Section 3 and v2 Phase 1.
 - **H9 (new floor).** Say how the 1.64×10⁸ km² of ocean floor on continent-bearing plates arose within H1-H3.
 - **H10 (motion).** Name the energy and the weak layer that move blocks about 3,800 km in 150 days, with dissipation staying deep and below melting.
 - **H11 (keel preservation, from P9).** After the Flood each craton has a keel of 150-250 km. A mechanism must state what it leaves.
-- **Budget B** = 1.4×10²⁶ J (ocean limited to 40 °C bulk). B and the 40 °C cap are unverified (CMCT O9).
+- **Budget B** = 1.4×10²⁶ J (ocean limited to 40 °C bulk). B and the 40 °C cap are unverified (CKDT O9).
 
 ---
 
@@ -111,10 +111,10 @@ All from v2 (clean-room), which re-downloaded the data from the publisher. v1 us
 ### 6.2 Named submerged fragments (v2 5.2-5.3, carried)
 - **Zealandia** (Mortimer et al. 2017, GSA Today): 4.9×10⁶ km², about 94% submerged, a thinned and stretched continent straddling the Pacific-Australian plate boundary. In the dataset: 26 provinces, 6.27×10⁶ km² (it includes back-arc basins and ridges), 95.1% below sea level. The North/South split in v2 is v2's own (by plate polygon), not the literature's (North 4.63×10⁶ km², 96.1% submerged; South 1.64×10⁶ km², 92.4%).
 - Others (area, share below sea level): Kerguelen Plateau south part 2.0×10⁵ km² (100%); Exmouth Plateau 5.2×10⁵ (100%); Sunda Shelf 7.3×10⁵ (99%); Alpha Mendeleev Ridge 1.1×10⁶ (100%); Lord Howe Rise 8.6×10⁵ (mean −1,803 m); Campbell Plateau 5.4×10⁵ (−881 m); Mauritius, Seychelles and Chagos remnants (95-98%); Blake Plateau and Bahama Platform (95-100%); Iberian Rifted Margin (96%); and others in v2 5.3.
-- **Stretching** is a note in CMCT (Section 4.5), not part of the flood. The transitional provinces' mean elevation of −1,360 m and 92.6% submergence is read there as stretched crust (β about 1.5). DTAT uses this only as a description of what the submerged fragments are, not as a flood source.
+- **Stretching** is a note in CKDT (Section 4.5), not part of the flood. The transitional provinces' mean elevation of −1,360 m and 92.6% submergence is read there as stretched crust (β about 1.5). DTAT uses this only as a description of what the submerged fragments are, not as a flood source.
 
 ### 6.3 Recession (the DTAT reframe, kept)
-"Recession" does not need global sea level to fall. If most submerged crust stays submerged and only collided fragments rise, land re-emerges locally. This replaces a global recession mechanism by selective re-emergence, with Zealandia and the 33.3% below sea level today as the precedent. **Open (Section 13):** whether the uncollided share and the 33.3% line up, and the water budget that decides which crust is above water (CMCT H6).
+"Recession" does not need global sea level to fall. If most submerged crust stays submerged and only collided fragments rise, land re-emerges locally. This replaces a global recession mechanism by selective re-emergence, with Zealandia and the 33.3% below sea level today as the precedent. **Open (Section 13):** whether the uncollided share and the 33.3% line up, and the water budget that decides which crust is above water (CKDT H6).
 
 ---
 
@@ -175,10 +175,10 @@ All are inside the 74-day window of v1 and inside the 150 days of prevailing wat
 - **P9/H11 is satisfied.** After the slip every craton sits on a keel. It need not be the keel it started on.
 - **H10's deep-dissipation branch (Section 7.2) is avoided.** Nothing moves below the Moho, so dissipation is in one thin zone at about 35 km, insulated by the crust above (conduction through 10 km takes 3×10⁶ years). The mass that moves is crust only.
 - **Convergence may not need subduction.** Where moving crust meets other crust it can thicken or overthrust, which is DTAT's collision-uplift picture. This could build the Himalaya-Karakoram without CPT's heat. Untested.
-- **A candidate slip layer.** The serpentinite layer of CMCT Section 21 is a wet, low-friction candidate (CMCT 27.1 notes hydrous minerals are the only workable water store). **Open:** whether that layer is on the moving side (the lowest crust) or the fixed side (the uppermost keel mantle). It changes where the collapse happens.
+- **A candidate slip layer.** The serpentinite layer of CKDT Section 21 is a wet, low-friction candidate (CKDT 27.1 notes hydrous minerals are the only workable water store). **Open:** whether that layer is on the moving side (the lowest crust) or the fixed side (the uppermost keel mantle). It changes where the collapse happens.
 
 ### 8.2 The slip-zone heat, by hand arithmetic
-The heat in the slip zone depends on the shear stress and the distance, not on speed. Temperature rise of a zone of thickness h: ΔT = τ·d / (ρ·c·h), with ρc = 2.7×10⁶ J/m³/K, no latent heat, no dehydration, no conduction out. (CMCT Section 25 shows the Moho is already at 400-600 °C under cratons, and the serpentinite limit is about 570-620 °C, so a rise of a few hundred K can trigger dehydration.)
+The heat in the slip zone depends on the shear stress and the distance, not on speed. Temperature rise of a zone of thickness h: ΔT = τ·d / (ρ·c·h), with ρc = 2.7×10⁶ J/m³/K, no latent heat, no dehydration, no conduction out. (CKDT Section 25 shows the Moho is already at 400-600 °C under cratons, and the serpentinite limit is about 570-620 °C, so a rise of a few hundred K can trigger dehydration.)
 
 | Slide distance d | τ = 0.2 MPa, h = 3 km | τ = 0.2 MPa, h = 1 km | τ = 1 MPa, h = 3 km | τ = 1 MPa, h = 1 km |
 |------------------|----------------------|----------------------|--------------------|--------------------|
@@ -193,14 +193,14 @@ The heat in the slip zone depends on the shear stress and the distance, not on s
 1. **Registration (the biggest test).** Cratonic crust today sits over a thick keel of about the same outline. If crust slid thousands of km over fixed keels, it had to land on a keel and stop. DTAT softens this, since most fragments end up submerged or elsewhere and only the survivors are "land," so the match would be statistical. But "stuck over a keel" needs a reason. The North China craton (crust without its original keel) is a mainstream counter-example that shows the match is not perfect. Non-age checks exist (keel edges against surface craton edges; seismic fabrics against surface structure). **Test T1 below.**
 2. **H9 is not solved.** Wherever crust pulls apart (Atlantic, Indian Ocean), bare mantle with no keel is exposed. v2 6.2: if the continent-bearing plates' carried floor goes back to its Pangea position and the Pacific-side floor stays fixed, **1.08×10⁸ km² is uncovered** (66% of the 1.64×10⁸ km², 302 times the H1 area limit, 301 B at 3.9×10¹⁴ J/m²). Exhumed mantle between stretched margins (C2) covers 21-85% at assumed widths of 100-400 km (needs 321 km on every margin, 468 km on passive ones). Intact new floor passes the heat cap (C3) only if heat extraction stays above about 300 m. The 136 transitional provinces (3.8×10⁷ km²) are about a quarter of the 1.64×10⁸ km², and most Atlantic and Indian floor is oceanic crust, not stranded continent. **A slide over fixed keels does not change these figures.**
 3. **A slip layer that weak is runaway.** At 0.2 MPa or less a tiny contrast in elevation or crustal thickness drives the motion. Stopping it in the right place is the registration problem again.
-4. **Isostasy (an open opportunity, not a result).** If keels are net dense (CMCT 14.2; v2 5.5: a purely thermal excess of about 2.3%, chemical lightness uncertain), crust that slides onto a keel sinks and crust that slides off rises. That might lower the land that arrives on keels and so help the flood, but real cratons sit at ordinary elevations, so the effect may be cancelled. Unchecked.
-5. **Sequence.** Whether the slide, the collapse (CMCT) and the collisions are one event, or follow each other, is not decided (Section 12).
+4. **Isostasy (an open opportunity, not a result).** If keels are net dense (CKDT 14.2; v2 5.5: a purely thermal excess of about 2.3%, chemical lightness uncertain), crust that slides onto a keel sinks and crust that slides off rises. That might lower the land that arrives on keels and so help the flood, but real cratons sit at ordinary elevations, so the effect may be cancelled. Unchecked.
+5. **Sequence.** Whether the slide, the collapse (CKDT) and the collisions are one event, or follow each other, is not decided (Section 12).
 
 ### 8.4 Tests for this hypothesis (none run)
 - **T1 Registration.** Compare the 114 craton polygons (Hasterok) with a lithosphere-thickness map. Measure how often craton crust sits over a thick keel and how far the outlines are offset. **Run 2026-11-25 against the Afonso et al. (2019) grid; result in Section 8.5, repeated with LITHO1.0, which agrees.**
 - **T2 Slip-stress budget.** For a Moho slip zone of 1-3 km: the largest stress that avoids melting, and whether serpentinite friction with near-lithostatic pore pressure is that low. **Run 2026-11-25; result in Section 8.6.**
 - **T3 Gap and H9.** Whether any version closes the 1.08×10⁸ km² gap without making new floor hot.
-- **T4 Isostatic effect of landing on a keel,** with the net-density sign from CMCT 14.2.
+- **T4 Isostatic effect of landing on a keel,** with the net-density sign from CKDT 14.2.
 
 ### 8.5 Result of T1 (2026-11-25, first pass, one thickness model)
 `scripts/registration_test.py`; log `results/registration_test_log.txt`; per-craton table `results/registration_test_cratons.csv`; data `data/afonso_2019/` (see its `PROVENANCE.md`). Lithosphere thickness from Afonso et al. (2019, GJI 217), a 0.2° grid (used at 0.4°). A "thick keel" is lithosphere of at least 150 km (the bottom of P9's range); 180 km is also shown. No ages are used.
@@ -241,7 +241,7 @@ The heat in the slip zone depends on the shear stress and the distance, not on s
 ### 8.6 Result of T2 (2026-11-25, first pass, friction values from search summaries)
 `scripts/slip_stress.py`; log `results/slip_stress_log.txt`. Two sides of one number, the shear stress τ on the slip surface at the median craton Moho (39 km, normal stress σₙ = 1.07 GPa at 2,800 kg/m³; 35 km 0.96 GPa, 46 km 1.26 GPa).
 
-**What heating allows.** The slip zone heats by ΔT = τ·d / (ρc·h) (Section 8.2). The room it has is the gap between the craton Moho temperature (CMCT Section 25.1) and the antigorite limit, 595 °C (the middle of the 570-620 °C bracket), beyond which the serpentinite layer dehydrates.
+**What heating allows.** The slip zone heats by ΔT = τ·d / (ρc·h) (Section 8.2). The room it has is the gap between the craton Moho temperature (CKDT Section 25.1) and the antigorite limit, 595 °C (the middle of the 570-620 °C bracket), beyond which the serpentinite layer dehydrates.
 
 | Surface heat flow | Craton Moho | Room before 595 °C | Stress cap τmax, zone 1 km / 3 km, slide 931 km | Slide 3,841 km |
 |-------------------|-------------|--------------------|--------------------------------------------------|----------------|
@@ -274,11 +274,11 @@ At hydrostatic-like pore pressure (λ about 0.4), τ is 64 MPa even at μ = 0.1.
 2. **A self-lubricating feedback is conceivable but not modelled.** A dehydrating layer can supply fluid near the rock load, and shear heating drives the dehydration. It needs the fluid trapped for 150 days (very low permeability), a continuous supply from the reaction, and no drainage by hydrofracture first.
 3. **The weakest values may not apply at craton Moho temperatures.** Lizardite is the low-temperature serpentine; it probably gives way to antigorite above roughly 300 °C (from memory, not checked), and craton Moho temperatures are 360-590 °C. Antigorite is the stronger serpentine at room temperature (about 0.2 at 500 °C only in one mixture).
 4. **The laboratory tests are far from this setting.** Normal stresses of 4-120 MPa against about 1,070 MPa here, and metres of slip against 900-3,800 km. Slip at 0.3 m/s is in the range where friction weakens further, but not shown at this pressure.
-5. **The heat room is thin for the Archean-mean craton** (60 K; only 3 K at 44 mW/m²), as CMCT Section 25 already found.
+5. **The heat room is thin for the Archean-mean craton** (60 K; only 3 K at 44 mW/m²), as CKDT Section 25 already found.
 
 **Verdict.** Not ruled out, not shown. The slip layer's stress is no longer an unknown number; it is a condition: near-lithostatic fluid held for 150 days. The next step is a fluid-supply model (dehydration rate, permeability, trapped fluid volume, thermal pressurisation), not more friction data.
 
-**Limits.** Friction values from one search pass of abstracts and summaries; hydrostatic-like λ = 0.4 is an assumption; uniform shear in a 1 or 3 km zone; no conduction out of the zone (about 3.6 m in 150 days, negligible); no latent heat; the antigorite limit at 1 GPa is from conference abstracts (CMCT 21.2); the melting limit of the crust base was not sourced (the wet crust solidus is believed, from memory, to lie above the antigorite limit, so the dehydration limit is used as the tighter one). The dehydration heat source (Wicks and Whittaker 1965) was not readable.
+**Limits.** Friction values from one search pass of abstracts and summaries; hydrostatic-like λ = 0.4 is an assumption; uniform shear in a 1 or 3 km zone; no conduction out of the zone (about 3.6 m in 150 days, negligible); no latent heat; the antigorite limit at 1 GPa is from conference abstracts (CKDT 21.2); the melting limit of the crust base was not sourced (the wet crust solidus is believed, from memory, to lie above the antigorite limit, so the dehydration limit is used as the tighter one). The dehydration heat source (Wicks and Whittaker 1965) was not readable.
 
 ---
 
@@ -287,7 +287,7 @@ At hydrostatic-like pore pressure (λ about 0.4), τ is 64 MPa even at μ = 0.1.
 ### 9.1 What was carried
 - **The ten highest peaks** lie in the Himalayan Orogenic Belt (nine) and the Karakoram Province (K2), inside the Eurasian plate's Tibet and Pamir deformation zones (v2 `phase2b_peaks_provinces.txt`). That is where India meets Eurasia in the fit. DTAT's collision uplift has a concrete target: **8,091-8,849 m from a pre-Flood relief below 610 m.**
 - **India is the weak block in the fit** (Section 5): 16% area-weighted overlap, "partly physical" since its northern edge is crushed into Eurasia today.
-- **Collision-driven uplift (v1 13.7-13.8, flagged).** v1 converts convergence into surface uplift at 1-2% of the convergence distance. For 500, 1,000 and 2,000 km this gives 1,111-2,222, 2,222-4,444 and 4,444-8,889 m, v1 compared this with its own 1,000-6,000 m keel-loss subsidence target, which is withdrawn with CKDT. The uplift now required is set by the peaks (about 7.5-8.2 km above a pre-Flood relief of under 610 m) and by the recession water budget. v1 also computed that the project's own tracked India-Asia convergence over a 74-day window (39 km) gives only about 130 m, which is local and too small. **Flagged:** the 1-2% ratio came from Himalaya-Tibet mainstream convergence totals, which depend on deep-time reconstructions (P1). The factor from thickening to surface uplift (about 1/4.5 in v1's numbers) was not re-derived. Treat the ratio as a borrowed, unverified number.
+- **Collision-driven uplift (v1 13.7-13.8, flagged).** v1 converts convergence into surface uplift at 1-2% of the convergence distance. For 500, 1,000 and 2,000 km this gives 1,111-2,222, 2,222-4,444 and 4,444-8,889 m, v1 compared this with its own 1,000-6,000 m keel-loss subsidence target, which is withdrawn with old CKDT. The uplift now required is set by the peaks (about 7.5-8.2 km above a pre-Flood relief of under 610 m) and by the recession water budget. v1 also computed that the project's own tracked India-Asia convergence over a 74-day window (39 km) gives only about 130 m, which is local and too small. **Flagged:** the 1-2% ratio came from Himalaya-Tibet mainstream convergence totals, which depend on deep-time reconstructions (P1). The factor from thickening to surface uplift (about 1/4.5 in v1's numbers) was not re-derived. Treat the ratio as a borrowed, unverified number.
 
 ### 9.2 What is still open (carried from v1, unresolved)
 - Why a collision gives **lasting** uplift rather than a transient bump that isostasy relaxes. No relaxation dynamics are modelled.
@@ -306,7 +306,7 @@ At hydrostatic-like pore pressure (λ about 0.4), τ is 64 MPa even at μ = 0.1.
 v1 built a hypsometric volume-conservation solver (area against elevation, bisection for the sea level that holds a given water volume) using a 2° ETOPO1 grid. **The tool is carried; its results are not.**
 - **Validation (carried):** today's bathymetry and the 1,335,000,000 km³ ocean volume return a sea level of **+2.37 m** (against ~0 m). Grid statistics agree with NOAA's published values (ocean area 70.8% against 71.0%, mean ocean depth 3,695 m against 3,686 m, volume within 0.06%).
 - **Not carried:** the +3.68 m shift from wiring in 35 pairs (built on the oscillator and on Merdith 250 Ma positions); the wiring itself covered only 5.5% of grid cells.
-- **Next use:** v2's ETOPO 2022 grid is finer (0.25°, bedrock). A rebuild on that grid, with CMCT's water budget (H6), would test the recession claim in Section 6.3.
+- **Next use:** v2's ETOPO 2022 grid is finer (0.25°, bedrock). A rebuild on that grid, with CKDT's water budget (H6), would test the recession claim in Section 6.3.
 
 ---
 
@@ -329,7 +329,7 @@ v1 built a hypsometric volume-conservation solver (area against elevation, bisec
 | Lost-continent candidates (Argoland, Greater Adria, Balkanatolia, Gulden Draak Knoll, Batavia Knoll; Mauritia already in the dataset as Mauritius Remnant) | v1 prompt 14; 13.11.3 | **Names only, unplaced** | Real literature candidates, but v1 placed them using Merdith rotations; areas of the last two (15,000 km² each) are v1 illustrative guesses |
 | Hypsometric water-level solver | v1 13.9 | **Tool carried, results not** | Section 10 |
 | Damped-oscillator uplift curve | v1 13.8.6, Phase 4 | **Not carried into verdicts** | Stylistic; real GIA is monotonic (v1's own finding) |
-| Keel-loss subsidence (CKDT) as DTAT's starting point | v1 | **Not carried** | Struck in CMCT under P9 |
+| Keel-loss subsidence (old CKDT) as DTAT's starting point | v1 | **Not carried** | Struck in CKDT under P9 |
 | v1 plate-motion animation, globe, renders, UI work, 110 regression tests | v1 Phases 3-10, 13.10 | **Not carried** | Presentation layer built on the 7-plate and 647-fragment layouts. Still in `Noah's Pangea v1` |
 | Fixed-keel crust slip | discussion 2026-11-25 | **New, untested** | Section 8 |
 
@@ -337,22 +337,22 @@ v1 built a hypsometric volume-conservation solver (area against elevation, bisec
 
 ---
 
-## 12. Interface with CMCT
+## 12. Interface with CKDT
 
-CMCT Section 23 holds the same table from the other side. Each file states what it takes; neither restates the other's results.
+CKDT Section 23 holds the same table from the other side. Each file states what it takes; neither restates the other's results.
 
 | Direction | Item | Status |
 |-----------|------|--------|
-| CMCT gives DTAT | The cause of submergence (collapse of a layer at the crust base, released water) in place of the struck keel-loss version | Unresolved; CMCT's verdicts are open |
-| CMCT gives DTAT | Heat budget B, constraints H1-H5, H9, H10, H11, and the water budget H6 | Stated in CMCT Section 3; DTAT cites, does not copy |
-| CMCT gives DTAT | A possible slip layer: the serpentinite layer (CMCT 21); the Moho temperature of cratons (CMCT 24-25) | Candidate only; whether the layer is on the moving or fixed side is open |
-| CMCT gives DTAT | Crack lines along province boundaries that could vent water (CMCT 22) | Geometry only |
-| DTAT gives CMCT | Whether fragmented, sliding crust behaves as the venting model needs, and whether collisions close or re-open vents | Not examined |
-| DTAT gives CMCT | The slip-zone heat and the order of events (slide, collapse, collision) | Section 8.2 gives the first numbers; sequence undecided |
-| DTAT gives CMCT | Recession of the flood and the submerged share (33.3%) | Section 6; CMCT does not address recession |
+| CKDT gives DTAT | The cause of submergence (collapse of a layer at the crust base, released water) in place of the struck keel-loss version | Unresolved; CKDT's verdicts are open |
+| CKDT gives DTAT | Heat budget B, constraints H1-H5, H9, H10, H11, and the water budget H6 | Stated in CKDT Section 3; DTAT cites, does not copy |
+| CKDT gives DTAT | A possible slip layer: the serpentinite layer (CKDT 21); the Moho temperature of cratons (CKDT 24-25) | Candidate only; whether the layer is on the moving or fixed side is open |
+| CKDT gives DTAT | Crack lines along province boundaries that could vent water (CKDT 22) | Geometry only |
+| DTAT gives CKDT | Whether fragmented, sliding crust behaves as the venting model needs, and whether collisions close or re-open vents | Not examined |
+| DTAT gives CKDT | The slip-zone heat and the order of events (slide, collapse, collision) | Section 8.2 gives the first numbers; sequence undecided |
+| DTAT gives CKDT | Recession of the flood and the submerged share (33.3%) | Section 6; CKDT does not address recession |
 | Shared | The registration test, H9 and H10 | Section 8.4; both files list them |
 
-**Rule for this file.** No DTAT verdict rests on a CMCT result that CMCT marks open, and (CMCT's rule, kept) no CMCT verdict rests on DTAT.
+**Rule for this file.** No DTAT verdict rests on a CKDT result that CKDT marks open, and (CKDT's rule, kept) no CKDT verdict rests on DTAT.
 
 ---
 
@@ -383,22 +383,22 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 | 3 | v1's 1.9 m/s closure speed has no re-checked source | Recomputed at v2's 0.30 m/s (Section 7.4) |
 | 4 | Fixed-keel slip would change which fragments carry keels, and P9 | Section 8; registration test T1 first |
 | 5 | The DTAT text in v1 `Theories.md` still assumes keel-loss submergence | Superseded by Section 1 of this file. The v1 file is left unchanged as an archive |
-| 6 | Folder and file naming (the instruction's quoting was ambiguous) | Folder and file are named `Differential Terrane Accretion Theory (DTAT)`, matching CMCT's convention |
-| D-A | Decision (user, 2026-11-25): give DTAT its own folder and document, separate from CMCT | Done in this draft |
-| D-B | Decision (user, 2026-11-25): crust slip over fixed keels is a candidate to explore in DTAT, not yet in CMCT | Section 8 |
+| 6 | Folder and file naming (the instruction's quoting was ambiguous) | Folder and file are named `Differential Terrane Accretion Theory (DTAT)`, matching CKDT's convention |
+| D-A | Decision (user, 2026-11-25): give DTAT its own folder and document, separate from CKDT | Done in this draft |
+| D-B | Decision (user, 2026-11-25): crust slip over fixed keels is a candidate to explore in DTAT, not yet in CKDT | Section 8 |
 | 7 | My earlier statement that craton crust "almost always sits over a thick keel of about the same outline" was too strong | T1 (Section 8.5): 67% of craton area on lithosphere ≥ 150 km; 65% of thick lithosphere lies under non-craton provinces |
 
 ---
 
 ## 15. Plan (nothing started)
 
-1. **Phase A: re-verify carried numbers** as CMCT's Section 14 did: area correction (D9), the v2 logs against their scripts, the 1,111-8,889 m uplift grid.
+1. **Phase A: re-verify carried numbers** as CKDT's Section 14 did: area correction (D9), the v2 logs against their scripts, the 1,111-8,889 m uplift grid.
 2. **Phase B1: registration test T1.** Done with two models (Section 8.5: Afonso et al. 2019 and LITHO1.0, which agree). Next: look for a landing mechanism, or limit slide distances.
 3. **Phase B2: Moho slip-zone stress budget T2.** First pass done (Section 8.6). Next: a fluid-supply model (dehydration rate, permeability, trapped fluid, thermal pressurisation) and the heat absorbed by dehydration; read the friction papers in full.
 4. **Phase B3: fragment paths and collisions** from v2's fitted layout at 0.30 m/s: which provinces collide, where, in what order, against today's belts and the 33,900 km of closed contacts.
-5. **Phase B4: H9** (shared with CMCT).
+5. **Phase B4: H9** (shared with CKDT).
 6. **Phase B5: lasting collision uplift** and the ten peaks.
-7. **Phase B6: recession and water level** on the 0.25° ETOPO 2022 grid with CMCT's water budget.
+7. **Phase B6: recession and water level** on the 0.25° ETOPO 2022 grid with CKDT's water budget.
 
 ---
 
@@ -408,7 +408,7 @@ Primary (via v2, `Noah's Pangea v2\sources\README.md`): S09 Hasterok et al. (202
 From v1 (not re-verified): Merdith et al. (2021) *Earth-Science Reviews* (reconstruction, **not used**); Eakins and Sharman (2010/2012) NOAA hypsometry; Advokaat and van Hinsbergen (2024) *Gondwana Research* 128 (Argoland); van Hinsbergen et al. (2019) *Gondwana Research* (Greater Adria); Licht et al. (2022) *Earth-Science Reviews* (Balkanatolia); Gibbons, Whittaker and Müller (2013) and Gibbons et al. (2016) *Gondwana Research* (Gulden Draak and Batavia knolls); Torsvik et al. (2013) and Ashwal et al. (2017) (Mauritia).
 Added 2026-11-25 for T1: Afonso, Salajegheh, Szwillus, Ebbing and Gaina (2019), *Geophysical Journal International* 217, 1602-1628, doi:10.1093/gji/ggz094 (lithospheric thickness grid from the EarthByte GPlates portal; `data/afonso_2019/PROVENANCE.md`). LITHO1.0 (Pasyanos, Masters, Laske and Ma 2014, JGR 119, 2153-2173, doi:10.1002/2013JB010626; from igppweb.ucsd.edu/~gabi/litho1.0.html; `data/litho1_0/PROVENANCE.md`) was used as the second model.
 Added 2026-11-25 for T2 (search summaries only; not read in full): Moore, Lockner and colleagues (1996-1997), USGS Open-File Report 96-702 (`pubs.usgs.gov/of/1996/0702/report.pdf`) and "Strengths of serpentinite gouges at elevated temperatures"; Tesei et al. (2018) on mineralogically controlled serpentinite friction; Reinen and colleagues (lizardite and antigorite rate dependence); a 2024 antigorite-quartz friction study (Cardiff, `orca.cardiff.ac.uk/171470`); Proctor et al. (2014), "Dynamic weakening of serpentinite gouges and bare surfaces at seismic slip rates", JGR Solid Earth; Brantut et al. (2016), Geology. The heat of dehydration (Wicks and Whittaker 1965, American Mineralogist 50) was not readable (the site returned a web page, not the PDF).
-CMCT sections used: 3 (constraints), 4.5, 14.2, 21, 22, 24, 25, 27.5.
+CKDT sections used: 3 (constraints), 4.5, 14.2, 21, 22, 24, 25, 27.5.
 
 ---
 
@@ -425,4 +425,4 @@ Eight figures in `images/` (each as `.png` and `.svg`), numbered from the simple
 | 05 | `images/05_slip_zone_heating` | Slip-zone temperature rise against distance, stress and zone thickness | 8.2 |
 | 06 | `images/06_registration_test` | The crust-over-keel registration problem and test T1 (subtitle gives the T1 result) | 8.3-8.5 |
 | 07 | `images/07_what_sliding_does_not_fix` | H9 uncovered floor (1.08×10⁸ km²) and H10 asthenosphere drag (at least 350 × B) | 7.2, 8.3 |
-| 08 | `images/08_dtat_cmct_interface_and_open_problems` | What each theory supplies, coloured by status, and the shared open problems | 12, 13 |
+| 08 | `images/08_dtat_ckdt_interface_and_open_problems` | What each theory supplies, coloured by status, and the shared open problems | 12, 13 |

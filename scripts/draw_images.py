@@ -42,7 +42,7 @@ def arrow(ax, p, q, color=INK, lw=2.2, style="-|>"):
 def fig01():
     fig, axs = plt.subplots(1, 3, figsize=(15, 5.8))
     title(fig, "01  The core idea: many fragments, only some collide",
-          "Schematic, not to scale. Sections 1 and 6.3. Every fragment is crust; the land is already submerged (cause: CMCT).")
+          "Schematic, not to scale. Sections 1 and 6.3. Every fragment is crust; the land is already submerged (cause: CKDT).")
     fig.subplots_adjust(top=0.78)
     rects = [(0.2, 2.2, 1.6, 1.4), (1.9, 2.4, 1.5, 1.2), (3.5, 2.2, 1.3, 1.4),
              (0.2, 0.7, 1.2, 1.4), (1.5, 0.5, 1.7, 1.5), (3.3, 0.6, 1.5, 1.3)]
@@ -277,8 +277,8 @@ def fig07():
 # ---------------------------------------------------------------- 08
 def fig08():
     fig, ax = plt.subplots(figsize=(14, 8.4))
-    title(fig, "08  DTAT and CMCT: who supplies what, and what is still open",
-          "Interface from DTAT Section 12 and CMCT Section 23. Green = computed in v2, amber = hypothesis or flagged number, red = open or failing.")
+    title(fig, "08  DTAT and CKDT: who supplies what, and what is still open",
+          "Interface from DTAT Section 12 and CKDT Section 23. Green = computed in v2, amber = hypothesis or flagged number, red = open or failing.")
     fig.subplots_adjust(top=0.9)
     blank(ax, (0, 14), (0, 8.2))
 
@@ -286,7 +286,7 @@ def fig08():
         ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.04,rounding_size=0.15", fc=c, ec=INK, lw=1.4))
         ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", fontsize=fs)
 
-    ax.text(3.0, 7.7, "CMCT (vertical)", ha="center", fontsize=14, fontweight="bold", color=KEEL)
+    ax.text(3.0, 7.7, "CKDT (vertical)", ha="center", fontsize=14, fontweight="bold", color=KEEL)
     ax.text(11.0, 7.7, "DTAT (sideways)", ha="center", fontsize=14, fontweight="bold", color=SLIP)
     box(0.4, 6.2, 5.2, 1.0, "Cause of submergence:\ncollapse of a crust-base layer + released water", "#f3d7d3")
     box(0.4, 4.9, 5.2, 1.0, "Constraints: heat budget B (1.4×10$^{26}$ J),\nwater budget H6, H1-H5, H9-H11", "#d6ead9")
@@ -307,7 +307,7 @@ def fig08():
     box(0.4, 0.4, 13.2, 1.3, "Shared and open:  H9 new floor (1.08×10$^8$ km$^2$ uncovered)  ·  H10 force and energy  ·  "
         "registration of crust over keels\norder of events (slide, collapse, collisions)  ·  lasting uplift after collision  ·  fragment paths",
         "#f3d7d3", fs=11)
-    save(fig, "08_dtat_cmct_interface_and_open_problems")
+    save(fig, "08_dtat_ckdt_interface_and_open_problems")
 
 
 for f in (fig01, fig02, fig03, fig04, fig05, fig06, fig07, fig08):

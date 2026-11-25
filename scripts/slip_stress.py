@@ -4,8 +4,8 @@ Two sides of the same number, the shear stress tau on the slip surface:
   (A) What friction gives:  tau = mu * (sigma_n - P_f) = mu * sigma_n * (1 - lambda),  lambda = P_f / sigma_n.
   (B) What heating allows:  the slip zone of thickness h heats by dT = tau * d / (rho_c * h) over a slide of d, so
       tau_max = dT_allowed * rho_c * h / d.
-dT_allowed is the room between the craton Moho temperature (CMCT Section 25) and the antigorite limit (595 C, middle of the
-570-620 C bracket, CMCT Section 21.2), beyond which the serpentinite layer dehydrates.
+dT_allowed is the room between the craton Moho temperature (CKDT Section 25) and the antigorite limit (595 C, middle of the
+570-620 C bracket, CKDT Section 21.2), beyond which the serpentinite layer dehydrates.
 
 No ages. Inputs are listed below; friction values are from the literature search of 2026-11-25 (see DTAT Section 8.6).
 Run from the repo root: python scripts/slip_stress.py   Output: results/slip_stress_log.txt
@@ -23,9 +23,9 @@ def p(s=""):
 
 
 G = 9.8
-RHO_CRUST = 2800.0          # kg/m3, as in CMCT Section 27
+RHO_CRUST = 2800.0          # kg/m3, as in CKDT Section 27
 RHO_C = 2.7e6               # J/m3/K, as in DTAT Section 8.2
-DEPTHS_KM = (35.0, 39.0, 46.0)   # craton Moho depths: median 39 km, 35-46 km spread (CMCT Sections 19, 25)
+DEPTHS_KM = (35.0, 39.0, 46.0)   # craton Moho depths: median 39 km, 35-46 km spread (CKDT Sections 19, 25)
 SIGMA = {z: RHO_CRUST * G * z * 1e3 for z in DEPTHS_KM}
 Z0 = 39.0
 S0 = SIGMA[Z0]
@@ -52,7 +52,7 @@ for t in targets:
 
 # ---------------------------------------------------------------- B
 p("\nB. STRESS CAP FROM HEATING: tau_max = dT * rho_c * h / d  (MPa)")
-p("   Room dT before the antigorite limit (595 C), from the craton Moho temperature at a given surface heat flow (CMCT Section 25.1):")
+p("   Room dT before the antigorite limit (595 C), from the craton Moho temperature at a given surface heat flow (CKDT Section 25.1):")
 moho = {28: 363, 32: 421, 36: 478, 40: 535, 44: 592}
 for hf, T in moho.items():
     p(f"     {hf} mW/m2: Moho {T} C, room {595 - T} K")
@@ -98,7 +98,7 @@ p("      but those tests are at 1-2 orders of magnitude lower normal stress and 
 p("   5. Lizardite, the weakest serpentine in the tests, is the low-temperature phase (it gives way to antigorite above roughly 300 C, from memory,")
 p("      not checked), so the weak values may not apply at craton Moho temperatures of 360-590 C, where antigorite (mu 0.5-0.85 at room T, about 0.2 at 500 C in a mixture) is expected.")
 p("   6. The antigorite limit leaves little room: 3-60 K for Moho temperatures of 535-592 C. Cooler cratons (28-32 mW/m2) leave 170-230 K")
-p("      but are far from the limit, which CMCT Section 25 already found.")
+p("      but are far from the limit, which CKDT Section 25 already found.")
 
 p("\nLIMITS")
 p("   Friction values are from a single search pass of abstracts and summaries, not read from the papers. Hydrostatic-like lambda 0.4 is an")

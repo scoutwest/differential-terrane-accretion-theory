@@ -20,7 +20,7 @@ A. SHEAR STRESS FROM FRICTION AT 39 km (MPa): tau = mu * sigma_n * (1 - lambda)
       5.0            0.9533   0.9766   0.9844   0.9907   0.9933
 
 B. STRESS CAP FROM HEATING: tau_max = dT * rho_c * h / d  (MPa)
-   Room dT before the antigorite limit (595 C), from the craton Moho temperature at a given surface heat flow (CMCT Section 25.1):
+   Room dT before the antigorite limit (595 C), from the craton Moho temperature at a given surface heat flow (CKDT Section 25.1):
      28 mW/m2: Moho 363 C, room 232 K
      32 mW/m2: Moho 421 C, room 174 K
      36 mW/m2: Moho 478 C, room 117 K
@@ -64,7 +64,7 @@ D. READING
    5. Lizardite, the weakest serpentine in the tests, is the low-temperature phase (it gives way to antigorite above roughly 300 C, from memory,
       not checked), so the weak values may not apply at craton Moho temperatures of 360-590 C, where antigorite (mu 0.5-0.85 at room T, about 0.2 at 500 C in a mixture) is expected.
    6. The antigorite limit leaves little room: 3-60 K for Moho temperatures of 535-592 C. Cooler cratons (28-32 mW/m2) leave 170-230 K
-      but are far from the limit, which CMCT Section 25 already found.
+      but are far from the limit, which CKDT Section 25 already found.
 
 LIMITS
    Friction values are from a single search pass of abstracts and summaries, not read from the papers. Hydrostatic-like lambda 0.4 is an
