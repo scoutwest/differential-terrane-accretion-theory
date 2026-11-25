@@ -1,6 +1,6 @@
 # Differential Terrane Accretion Theory (DTAT): fragments, motion, collision and recession in a young-earth Flood model
 
-**Status:** Draft 1, written 2026-11-25. This is a reorganisation, not new modelling. It merges the DTAT idea from `Noah's Pangea v1` (`Theories.md`; `Model.md` Sections 13.7-13.11) with the clean-room results in `Noah's Pangea v2` (`Model.md` Phases 2, 3, 5 and 6), and adds one new hypothesis from discussion (the fixed-keel crust slip, Section 8). Every carried item is marked **carried**, **recomputed**, **flagged** or **not carried** (Section 11). Nothing here has been re-run from scripts: the v2 numbers are quoted from its logs, the v1 numbers from its text, and the few new numbers are arithmetic done by hand in this draft (marked "hand arithmetic"). No DTAT script exists yet.
+**Status:** Draft 1, written 2026-11-25. This is a reorganisation, not new modelling. It merges the DTAT idea from `Noah's Pangea v1` (`Theories.md`; `Model.md` Sections 13.7-13.11) with the clean-room results in `Noah's Pangea v2` (`Model.md` Phases 2, 3, 5 and 6), and adds one new hypothesis from discussion (the fixed-keel crust slip, Section 8). Every carried item is marked **carried**, **recomputed**, **flagged** or **not carried** (Section 11). The v2 numbers are quoted from its logs, the v1 numbers from its text, and the few other new numbers are arithmetic done by hand in this draft (marked "hand arithmetic"). Two DTAT scripts exist: `scripts/draw_images.py` (the figures) and `scripts/registration_test.py` (test T1, added 2026-11-25, result in Section 8.5).
 **Companion theory:** Cascading Moho Collapse Theory (CMCT), `..\Cascading Moho Collapse Theory (CMCT)\Cascading Moho Collapse Theory (CMCT).md`. CMCT supplies the cause of submergence, the water and the heat constraints. DTAT supplies the sideways motion, the fragments, the collisions and the recession. The interface is in Section 12.
 **Nature:** a speculative young-earth creation-science model. Mainstream geoscience rejects its premises. Where a number fails, the failure is stated.
 
@@ -197,10 +197,31 @@ The heat in the slip zone depends on the shear stress and the distance, not on s
 5. **Sequence.** Whether the slide, the collapse (CMCT) and the collisions are one event, or follow each other, is not decided (Section 12).
 
 ### 8.4 Tests for this hypothesis (none run)
-- **T1 Registration.** Compare the 114 craton polygons (Hasterok) with a lithosphere-thickness map such as LITHO1.0 (not yet obtained). Measure how often craton crust sits over a thick keel and how far the outlines are offset. This could end the idea cheaply.
+- **T1 Registration.** Compare the 114 craton polygons (Hasterok) with a lithosphere-thickness map. Measure how often craton crust sits over a thick keel and how far the outlines are offset. **Run 2026-11-25 against the Afonso et al. (2019) grid; result in Section 8.5.** A second, independent model (LITHO1.0) has not been run.
 - **T2 Slip-stress budget.** For a Moho slip zone of 1-3 km: the largest stress that avoids melting, and whether serpentinite friction with near-lithostatic pore pressure is that low (friction data not yet sourced).
 - **T3 Gap and H9.** Whether any version closes the 1.08×10⁸ km² gap without making new floor hot.
 - **T4 Isostatic effect of landing on a keel,** with the net-density sign from CMCT 14.2.
+
+### 8.5 Result of T1 (2026-11-25, first pass, one thickness model)
+`scripts/registration_test.py`; log `results/registration_test_log.txt`; per-craton table `results/registration_test_cratons.csv`; data `data/afonso_2019/` (see its `PROVENANCE.md`). Lithosphere thickness from Afonso et al. (2019, GJI 217), a 0.2° grid (used at 0.4°). A "thick keel" is lithosphere of at least 150 km (the bottom of P9's range); 180 km is also shown. No ages are used.
+
+| Measure | Result |
+|---------|--------|
+| Craton area on thick lithosphere (observed, zero offset) | **67%** at ≥ 150 km; **41%** at ≥ 180 km. Area-weighted mean thickness 156 km |
+| Cratons with at least half their area ≥ 150 km | 77 of 114 (at least 80%: 60; under 20%: 18) |
+| Null: the same craton shapes moved rigidly to random places, anywhere on the globe | 16% (95% range 10-22%) at ≥ 150 km; 8% at ≥ 180 km |
+| Null: moved only onto continental or transitional provinces | **36% (95% range 28-44%)** at ≥ 150 km; 18% at ≥ 180 km |
+| Where the ≥ 150 km lithosphere lies | 34% under cratons, **65% under other continental or transitional provinces**, 1% elsewhere |
+| Share ≥ 150 km as the outline is moved away from where it is | 67% (0 km), 62% (200-300 km), 56% (300-500 km), 48% (500-800 km), 40% (800-1,100 km) |
+| Median offset of the best placement within ±1,500 km | 300 km. 30 of 114 cratons are already at their best placement; 39 within 100 km, 40 at 100-500 km, 35 beyond 500 km |
+
+**Reading.**
+1. **The match is real but loose.** 67% is well outside the 28-44% that random landing on continental crust gives, so random landing is not the whole story. But a third of craton area is not on thick lithosphere, and the match falls to near the random level by about 1,000 km.
+2. **The earlier statement that craton and keel outlines match closely was too strong.** Thick lithosphere lies mostly (65%) under non-craton provinces, so keels are broader than the mapped cratons. Some of the 18 poorly matched "cratons" are small arcs and basins that the Hasterok cratons layer includes; some are classic cases of crust without its keel (the North China craton region, for example, shows low values).
+3. **What it means for the fixed-keel slip.** Not contradicted: the match is too loose to rule out slides of tens to a few hundred km. Not supported either: DTAT's slides of 500-3,800 km are longer than the distance over which the match survives (a 931 km offset gives about 42%, close to the 36% random level). The observed 67% therefore needs a landing mechanism, slides of a few hundred km or less, or pre-slide positions that were already matched. Section 8.3 item 1 remains open as a mechanism problem, not an observation problem.
+4. **The test cannot say that the craton crust and keel formed together.** It measures only that they coincide today.
+
+**Limits.** One model (Afonso et al. 2019) is a joint inversion of seismic, gravity, elevation, heat-flow and petrological data and may follow the surface geology it was constrained by, so part of the match could be built in. A second, independent model (LITHO1.0) has not been run. The thickness-to-keel mapping is the model's, not a measurement of chemical depletion. Grid stride 0.4°; up to 3,000 points sampled per craton; the offset search is a flat-earth shift. The "best offset" search over 961 shifts always finds a good placement, so its 96% figure is only an upper bound.
 
 ---
 
@@ -284,7 +305,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 |----|---------|--------|
 | D1 | **H10:** a weak layer and energy source for crust moving hundreds to thousands of km in 150 days | Asthenospheric drag fails by 350× (7.2). Moho slip layer untested (8.4 T2) |
 | D2 | **H9:** 1.08×10⁸ km² of new floor | Not solved (8.3, v2 6.2) |
-| D3 | **Registration** of craton crust over keels after sliding | Test T1 not run |
+| D3 | **Registration** of craton crust over keels after sliding | T1 run (Section 8.5): match is real (67% on thick lithosphere against a 36% random-landing null) but loose; slides over about 500 km exceed the distance over which it survives. Needs a landing mechanism. LITHO1.0 not run |
 | D4 | Lasting collision uplift, not a transient bump | Not modelled |
 | D5 | Fragment paths: do the specific provinces actually collide where today's belts are, and not where there are none | Not tested beyond 16 misfits (7 of which end away from their block) |
 | D6 | Whether the 33.3% submerged crust matches the uncollided fraction | Not tested |
@@ -308,13 +329,14 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 | 6 | Folder and file naming (the instruction's quoting was ambiguous) | Folder and file are named `Differential Terrane Accretion Theory (DTAT)`, matching CMCT's convention |
 | D-A | Decision (user, 2026-11-25): give DTAT its own folder and document, separate from CMCT | Done in this draft |
 | D-B | Decision (user, 2026-11-25): crust slip over fixed keels is a candidate to explore in DTAT, not yet in CMCT | Section 8 |
+| 7 | My earlier statement that craton crust "almost always sits over a thick keel of about the same outline" was too strong | T1 (Section 8.5): 67% of craton area on lithosphere ≥ 150 km; 65% of thick lithosphere lies under non-craton provinces |
 
 ---
 
 ## 15. Plan (nothing started)
 
 1. **Phase A: re-verify carried numbers** as CMCT's Section 14 did: area correction (D9), the v2 logs against their scripts, the 1,111-8,889 m uplift grid.
-2. **Phase B1: registration test T1** (needs a lithosphere-thickness grid).
+2. **Phase B1: registration test T1.** First pass done (Section 8.5, Afonso et al. 2019). Next: repeat with LITHO1.0 as an independent model, and look for a landing mechanism.
 3. **Phase B2: Moho slip-zone stress budget T2** with sourced serpentinite friction.
 4. **Phase B3: fragment paths and collisions** from v2's fitted layout at 0.30 m/s: which provinces collide, where, in what order, against today's belts and the 33,900 km of closed contacts.
 5. **Phase B4: H9** (shared with CMCT).
@@ -327,6 +349,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 
 Primary (via v2, `Noah's Pangea v2\sources\README.md`): S09 Hasterok et al. (2022) and repository; S13 ETOPO 2022 (NOAA); S14 Mortimer et al. (2017), GSA Today 27(3); S15 Pearson et al. (2021), Nature 596 (abstract and snippets only); S16 Hirth and Kohlstedt (olivine flow laws); S19-S23 secondary pages on sutures and ophiolites (Wikipedia, summarised).
 From v1 (not re-verified): Merdith et al. (2021) *Earth-Science Reviews* (reconstruction, **not used**); Eakins and Sharman (2010/2012) NOAA hypsometry; Advokaat and van Hinsbergen (2024) *Gondwana Research* 128 (Argoland); van Hinsbergen et al. (2019) *Gondwana Research* (Greater Adria); Licht et al. (2022) *Earth-Science Reviews* (Balkanatolia); Gibbons, Whittaker and Müller (2013) and Gibbons et al. (2016) *Gondwana Research* (Gulden Draak and Batavia knolls); Torsvik et al. (2013) and Ashwal et al. (2017) (Mauritia).
+Added 2026-11-25 for T1: Afonso, Salajegheh, Szwillus, Ebbing and Gaina (2019), *Geophysical Journal International* 217, 1602-1628, doi:10.1093/gji/ggz094 (lithospheric thickness grid from the EarthByte GPlates portal; `data/afonso_2019/PROVENANCE.md`). LITHO1.0 (Pasyanos et al. 2014, JGR 119, doi:10.1002/2013JB010626) is the planned independent check and has not been downloaded.
 CMCT sections used: 3 (constraints), 4.5, 14.2, 21, 22, 24, 25, 27.5.
 
 ---
@@ -342,6 +365,6 @@ Eight figures in `images/` (each as `.png` and `.svg`), numbered from the simple
 | 03 | `images/03_closure_times` | Days to cross a fragment's own width at 0.30 m/s, against the 74-day and 150-day windows | 7.4 |
 | 04 | `images/04_fixed_keel_crust_slip` | Cross-section of the fixed-keel crust slip: before, during, after | 8 |
 | 05 | `images/05_slip_zone_heating` | Slip-zone temperature rise against distance, stress and zone thickness | 8.2 |
-| 06 | `images/06_registration_test` | The crust-over-keel registration problem and test T1 | 8.3, 8.4 |
+| 06 | `images/06_registration_test` | The crust-over-keel registration problem and test T1 (subtitle gives the T1 result) | 8.3-8.5 |
 | 07 | `images/07_what_sliding_does_not_fix` | H9 uncovered floor (1.08×10⁸ km²) and H10 asthenosphere drag (at least 350 × B) | 7.2, 8.3 |
 | 08 | `images/08_dtat_cmct_interface_and_open_problems` | What each theory supplies, coloured by status, and the shared open problems | 12, 13 |

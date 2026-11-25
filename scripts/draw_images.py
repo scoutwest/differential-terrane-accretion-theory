@@ -198,7 +198,7 @@ def fig05():
 def fig06():
     fig, axs = plt.subplots(1, 3, figsize=(15, 5.8))
     title(fig, "06  The hardest test: does craton crust sit over a keel of the same outline?",
-          "Map-view schematic, not to scale. Section 8.3 (item 1) and test T1. No data run yet.")
+          "Map-view schematic, not to scale. Section 8.3 (item 1) and test T1. T1 result (Section 8.5): 67% of craton area on lithosphere ≥ 150 km, against 36% for random landing.")
     fig.subplots_adjust(top=0.78)
     for ax in axs:
         blank(ax, (0, 10), (-0.6, 7.6))
@@ -209,7 +209,7 @@ def fig06():
     def cr(ax, x, y, w, h, ec=INK, ls="-"):
         ax.add_patch(Rectangle((x, y), w, h, fc="none", ec=ec, lw=2.5, ls=ls))
 
-    axs[0].set_title("Today (as observed): crust outline ≈ keel outline", fontsize=11)
+    axs[0].set_title("Today: craton crust broadly over thick lithosphere (67%)", fontsize=11)
     keel(axs[0], 1, 2, 3.6, 3)
     cr(axs[0], 1.1, 2.1, 3.4, 2.8)
     keel(axs[0], 5.8, 1.5, 3, 3.8)
@@ -230,7 +230,7 @@ def fig06():
     cr(axs[2], 2.6, 0.7, 3.4, 2.8, ec=BAD)
     cr(axs[2], 6.6, 3.0, 2.8, 3.4, ec=BAD)
     axs[2].text(5, 7.1, "crust offset from keel by hundreds of km", ha="center", fontsize=10, color=BAD)
-    axs[2].text(5, -0.4, "T1: compare the 114 craton polygons with a\nlithosphere-thickness map (e.g. LITHO1.0)",
+    axs[2].text(5, -0.4, "T1: 114 craton polygons compared with the Afonso (2019)\nthickness grid; LITHO1.0 check still to do",
                 ha="center", fontsize=10)
     save(fig, "06_registration_test")
 
@@ -294,7 +294,7 @@ def fig08():
     box(0.4, 2.3, 5.2, 1.0, "Vent cracks along province boundaries\n(geometry only)", "#f6e6c4")
     box(8.4, 6.2, 5.2, 1.0, "Fragments: 647 + 136 provinces; nine-block fit\n(631 of 647 fit)", "#d6ead9")
     box(8.4, 4.9, 5.2, 1.0, "Motion: 3,841 km mean, 0.30 m/s in 150 d;\nasthenosphere drag fails (≥ 350 × B)", "#f3d7d3")
-    box(8.4, 3.6, 5.2, 1.0, "Fixed-keel crust slip over the Moho\n(registration test T1 not run)", "#f6e6c4")
+    box(8.4, 3.6, 5.2, 1.0, "Fixed-keel crust slip over the Moho\n(T1: match real but loose, 67% vs 36%)", "#f6e6c4")
     box(8.4, 2.3, 5.2, 1.0, "Collisions, uplift (ratio borrowed, P1), ten peaks;\nrecession: 33.3% stays submerged", "#f6e6c4")
     arrow(ax, (5.7, 6.7), (8.3, 6.7), color=KEEL, lw=2.4)
     ax.text(7.0, 6.85, "submerged land", ha="center", fontsize=9.5)
