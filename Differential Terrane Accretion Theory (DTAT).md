@@ -328,3 +328,20 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 Primary (via v2, `Noah's Pangea v2\sources\README.md`): S09 Hasterok et al. (2022) and repository; S13 ETOPO 2022 (NOAA); S14 Mortimer et al. (2017), GSA Today 27(3); S15 Pearson et al. (2021), Nature 596 (abstract and snippets only); S16 Hirth and Kohlstedt (olivine flow laws); S19-S23 secondary pages on sutures and ophiolites (Wikipedia, summarised).
 From v1 (not re-verified): Merdith et al. (2021) *Earth-Science Reviews* (reconstruction, **not used**); Eakins and Sharman (2010/2012) NOAA hypsometry; Advokaat and van Hinsbergen (2024) *Gondwana Research* 128 (Argoland); van Hinsbergen et al. (2019) *Gondwana Research* (Greater Adria); Licht et al. (2022) *Earth-Science Reviews* (Balkanatolia); Gibbons, Whittaker and Müller (2013) and Gibbons et al. (2016) *Gondwana Research* (Gulden Draak and Batavia knolls); Torsvik et al. (2013) and Ashwal et al. (2017) (Mauritia).
 CMCT sections used: 3 (constraints), 4.5, 14.2, 21, 22, 24, 25, 27.5.
+
+---
+
+## 17. Figure index
+
+Eight figures in `images/` (each as `.png` and `.svg`), numbered from the simplest to the most complex. They are drawn by `scripts/draw_images.py`, which cites the section for each number. Figures 01, 04 and 06 are schematics and not to scale. Figures 03 and 05 use hand arithmetic (Sections 7.4 and 8.2); the rest quote v2.
+
+| # | File | Shows | Section |
+|---|------|-------|---------|
+| 01 | `images/01_core_idea` | Fragments before, during and after: collided ones rise, the rest stay submerged | 1, 6.3 |
+| 02 | `images/02_fragments_and_submergence` | 647 continental and 136 transitional provinces; 33.3% of the crust below sea level; correction to v1's "18%" | 4, 6.1 |
+| 03 | `images/03_closure_times` | Days to cross a fragment's own width at 0.30 m/s, against the 74-day and 150-day windows | 7.4 |
+| 04 | `images/04_fixed_keel_crust_slip` | Cross-section of the fixed-keel crust slip: before, during, after | 8 |
+| 05 | `images/05_slip_zone_heating` | Slip-zone temperature rise against distance, stress and zone thickness | 8.2 |
+| 06 | `images/06_registration_test` | The crust-over-keel registration problem and test T1 | 8.3, 8.4 |
+| 07 | `images/07_what_sliding_does_not_fix` | H9 uncovered floor (1.08×10⁸ km²) and H10 asthenosphere drag (at least 350 × B) | 7.2, 8.3 |
+| 08 | `images/08_dtat_cmct_interface_and_open_problems` | What each theory supplies, coloured by status, and the shared open problems | 12, 13 |
