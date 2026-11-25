@@ -1,0 +1,73 @@
+T2 SLIP-STRESS TEST: Moho slip layer
+Normal stress at the Moho (rho 2800 kg/m3, g 9.8): 35 km: 0.96 GPa, 39 km: 1.07 GPa, 46 km: 1.26 GPa
+
+A. SHEAR STRESS FROM FRICTION AT 39 km (MPa): tau = mu * sigma_n * (1 - lambda)
+   lambda =      0.0      0.4      0.9     0.95     0.99    0.995    0.999   0.9995
+   mu 0.1:   107.02    64.21    10.70     5.35     1.07     0.54     0.11     0.05
+   mu 0.2:   214.03   128.42    21.40    10.70     2.14     1.07     0.21     0.11
+   mu 0.3:   321.05   192.63    32.10    16.05     3.21     1.61     0.32     0.16
+   mu 0.5:   535.08   321.05    53.51    26.75     5.35     2.68     0.54     0.27
+   mu 0.7:   749.11   449.47    74.91    37.46     7.49     3.75     0.75     0.37
+   (lambda 0.40 is roughly hydrostatic pore pressure at this depth; 1.0 is fluid pressure equal to the rock load, the most a rock can hold.)
+
+   Fluid-pressure ratio lambda needed to bring tau down to a target, by friction coefficient (39 km):
+   target tau (MPa) mu 0.1    mu 0.2    mu 0.3    mu 0.5    mu 0.7  
+      0.1            0.9991   0.9995   0.9997   0.9998   0.9999
+      0.2            0.9981   0.9991   0.9994   0.9996   0.9997
+      0.5            0.9953   0.9977   0.9984   0.9991   0.9993
+      1.0            0.9907   0.9953   0.9969   0.9981   0.9987
+      2.0            0.9813   0.9907   0.9938   0.9963   0.9973
+      5.0            0.9533   0.9766   0.9844   0.9907   0.9933
+
+B. STRESS CAP FROM HEATING: tau_max = dT * rho_c * h / d  (MPa)
+   Room dT before the antigorite limit (595 C), from the craton Moho temperature at a given surface heat flow (CMCT Section 25.1):
+     28 mW/m2: Moho 363 C, room 232 K
+     32 mW/m2: Moho 421 C, room 174 K
+     36 mW/m2: Moho 478 C, room 117 K
+     40 mW/m2: Moho 535 C, room 60 K
+     44 mW/m2: Moho 592 C, room 3 K
+   dT allowed = 230 K (28 mW/m2 craton)
+     slide d (km)           500      931     1900     3841
+     zone h = 1 km          1.242    0.667    0.327    0.162
+     zone h = 3 km          3.726    2.001    0.981    0.485
+   dT allowed = 117 K (36 mW/m2)
+     slide d (km)           500      931     1900     3841
+     zone h = 1 km          0.632    0.339    0.166    0.082
+     zone h = 3 km          1.895    1.018    0.499    0.247
+   dT allowed = 60 K (40 mW/m2, the Archean mean)
+     slide d (km)           500      931     1900     3841
+     zone h = 1 km          0.324    0.174    0.085    0.042
+     zone h = 3 km          0.972    0.522    0.256    0.127
+   Heat absorbed by the dehydration itself would raise these caps; its size was not sourced (Wicks and Whittaker 1965 was not readable).
+   Each 100 kJ per kg of reacting rock absorbed is worth about 100 K of heating at c = 1,000 J/kg/K.
+
+C. WHAT FRICTION ACTUALLY ALLOWS (lab values; sources in DTAT Section 8.6)
+   lizardite, water-saturated gouge, room T: mu 0.15-0.35. For tau <= 1 MPa need lambda >= 0.9973; for tau <= 0.2 MPa need >= 0.9995 (at the stronger value).
+   end-member lizardite / fibrous serpentine, to 170 C (Tesei et al. 2018): mu 0.15-0.19. For tau <= 1 MPa need lambda >= 0.9951; for tau <= 0.2 MPa need >= 0.9990 (at the stronger value).
+   antigorite, room T (Reinen): mu 0.5-0.85. For tau <= 1 MPa need lambda >= 0.9989; for tau <= 0.2 MPa need >= 0.9998 (at the stronger value).
+   antigorite + quartz at 500 C (2024 study): mu 0.22-0.22. For tau <= 1 MPa need lambda >= 0.9958; for tau <= 0.2 MPa need >= 0.9992 (at the stronger value).
+   serpentinite bare surface at seismic slip rate (Proctor et al. 2014): mu 0.1-0.1. For tau <= 1 MPa need lambda >= 0.9907; for tau <= 0.2 MPa need >= 0.9981 (at the stronger value).
+   serpentinite gouge at 1 m/s, 4-22 MPa (Proctor et al. 2014): mu 0.39-0.51. For tau <= 1 MPa need lambda >= 0.9982; for tau <= 0.2 MPa need >= 0.9996 (at the stronger value).
+   Stress at hydrostatic-like pore pressure (lambda 0.4) with the weakest quoted mu (0.1): 64 MPa; with mu 0.2: 128 MPa.
+   Lab normal stresses in these tests are 4-120 MPa, against about 1,070 MPa here; slip distances are metres, against 900-3,800 km.
+
+D. READING
+   1. To stay under the heating cap (about 0.04-1.0 MPa for a 40 mW/m2 craton, 0.16-3.7 MPa for a cool 28 mW/m2 craton),
+      the slip surface needs lambda of about 0.997-0.9998 at mu 0.1-0.3. That is pore fluid held within 0.02-0.3% of the rock load.
+   2. Friction alone, with any lab mu from 0.1 to 0.85, gives tens to hundreds of MPa at lambda 0.9 and still about 1-10 MPa at 0.99.
+      So the slip layer works only if it is almost fully fluid-supported.
+   3. Fluid at the rock load is what a dehydrating layer can produce, and shear heating drives dehydration, so a self-lubricating
+      feedback is physically conceivable. It has not been modelled: it needs fluid trapped for 150 days (very low permeability),
+      continuous supply from the reaction, and the layer must not drain by hydrofracture first.
+   4. At 0.3 m/s the slip rate is in the range where laboratory friction weakens further (flash heating, melt, thermal pressurisation),
+      but those tests are at 1-2 orders of magnitude lower normal stress and metres of slip.
+   5. Lizardite, the weakest serpentine in the tests, is the low-temperature phase (it gives way to antigorite above roughly 300 C, from memory,
+      not checked), so the weak values may not apply at craton Moho temperatures of 360-590 C, where antigorite (mu 0.5-0.85 at room T, about 0.2 at 500 C in a mixture) is expected.
+   6. The antigorite limit leaves little room: 3-60 K for Moho temperatures of 535-592 C. Cooler cratons (28-32 mW/m2) leave 170-230 K
+      but are far from the limit, which CMCT Section 25 already found.
+
+LIMITS
+   Friction values are from a single search pass of abstracts and summaries, not read from the papers. Hydrostatic-like lambda 0.4 is an
+   assumption. Uniform shear in a zone of 1 or 3 km; no conduction out of the zone (a few km in 150 days would be ~3.6 m, so it is negligible);
+   no latent heat; heating all in the zone. The melting limit of the crust base was not sourced; wet crust solidus is believed to be above
+   the antigorite limit, so the dehydration limit is used as the tighter one (from memory). Normal stress is lithostatic with a constant density.

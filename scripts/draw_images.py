@@ -189,7 +189,7 @@ def fig05():
     ax.spines[["top", "right"]].set_visible(False)
     ax.text(0.99, 0.43, "For comparison, v2: shearing the asthenosphere at\n0.30 m/s needs 37-951 MPa and heats the layer\n180-9,200 K (350-8,900 × budget B). Ruled out.",
             transform=ax.transAxes, ha="right", fontsize=10, color=BAD)
-    ax.text(0.01, 0.50, "The real stress of a Moho slip layer\nis not known (test T2).",
+    ax.text(0.01, 0.50, "T2 (Section 8.6): staying under the heat cap needs\npore fluid within 0.02-0.3% of the rock load.",
             transform=ax.transAxes, ha="left", fontsize=10, color="#555")
     save(fig, "05_slip_zone_heating")
 

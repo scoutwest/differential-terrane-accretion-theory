@@ -198,7 +198,7 @@ The heat in the slip zone depends on the shear stress and the distance, not on s
 
 ### 8.4 Tests for this hypothesis (none run)
 - **T1 Registration.** Compare the 114 craton polygons (Hasterok) with a lithosphere-thickness map. Measure how often craton crust sits over a thick keel and how far the outlines are offset. **Run 2026-11-25 against the Afonso et al. (2019) grid; result in Section 8.5, repeated with LITHO1.0, which agrees.**
-- **T2 Slip-stress budget.** For a Moho slip zone of 1-3 km: the largest stress that avoids melting, and whether serpentinite friction with near-lithostatic pore pressure is that low (friction data not yet sourced).
+- **T2 Slip-stress budget.** For a Moho slip zone of 1-3 km: the largest stress that avoids melting, and whether serpentinite friction with near-lithostatic pore pressure is that low. **Run 2026-11-25; result in Section 8.6.**
 - **T3 Gap and H9.** Whether any version closes the 1.08×10⁸ km² gap without making new floor hot.
 - **T4 Isostatic effect of landing on a keel,** with the net-density sign from CMCT 14.2.
 
@@ -237,6 +237,48 @@ The heat in the slip zone depends on the shear stress and the distance, not on s
 **Reading of the check.** The two models agree on the finding: craton crust sits on thick lithosphere about 25-30 points more often than random landing on continental crust would give, and the match falls toward the random level over about 1,000 km. They differ in detail: LITHO1.0 is thicker (mean 192 km under cratons) and has thick lithosphere under 23% of its ≥ 150 km area outside all mapped provinces (old ocean floor), which Afonso et al. does not (1%), so a thickness threshold alone is model-dependent. The two share inputs (seismic surface-wave data), so this is a check of method and model choice, not of independent physics. **The conclusion in Section 8.5 stands: a real but loose match; slides longer than a few hundred km need a landing mechanism.**
 
 **Limits.** Each model is an inversion of present-day data (seismic, and in Afonso et al. also gravity, elevation, heat-flow and petrological data) and may follow the surface geology it was constrained by, so part of the match could be built in. The thickness-to-keel mapping is the model's, not a measurement of chemical depletion. Grid stride 0.4°; up to 3,000 points sampled per craton; the offset search is a flat-earth shift. The "best offset" search over 961 shifts always finds a good placement, so its 96% figure is only an upper bound.
+
+### 8.6 Result of T2 (2026-11-25, first pass, friction values from search summaries)
+`scripts/slip_stress.py`; log `results/slip_stress_log.txt`. Two sides of one number, the shear stress τ on the slip surface at the median craton Moho (39 km, normal stress σₙ = 1.07 GPa at 2,800 kg/m³; 35 km 0.96 GPa, 46 km 1.26 GPa).
+
+**What heating allows.** The slip zone heats by ΔT = τ·d / (ρc·h) (Section 8.2). The room it has is the gap between the craton Moho temperature (CMCT Section 25.1) and the antigorite limit, 595 °C (the middle of the 570-620 °C bracket), beyond which the serpentinite layer dehydrates.
+
+| Surface heat flow | Craton Moho | Room before 595 °C | Stress cap τmax, zone 1 km / 3 km, slide 931 km | Slide 3,841 km |
+|-------------------|-------------|--------------------|--------------------------------------------------|----------------|
+| 28 mW/m² | 363 °C | 232 K | 0.67 / 2.0 MPa | 0.16 / 0.49 MPa |
+| 36 mW/m² | 478 °C | 117 K | 0.34 / 1.0 MPa | 0.08 / 0.25 MPa |
+| 40 mW/m² (Archean mean) | 535 °C | 60 K | 0.17 / 0.52 MPa | 0.04 / 0.13 MPa |
+| 44 mW/m² | 592 °C | 3 K | about 0 | about 0 |
+
+(For slides of 500 and 1,900 km the caps are in the log. The caps assume no latent heat. Dehydration absorbs heat, which would raise them; its size was not sourced. Each 100 kJ per kg of reacting rock absorbed is worth about 100 K.)
+
+**What friction gives.** τ = μ·σₙ·(1 − λ), where λ is pore-fluid pressure divided by the rock load.
+
+| μ | τ at λ = 0.9 | at 0.99 | at 0.999 |
+|---|--------------|---------|----------|
+| 0.1 | 10.7 MPa | 1.07 | 0.11 |
+| 0.3 | 32 MPa | 3.2 | 0.32 |
+| 0.7 | 75 MPa | 7.5 | 0.75 |
+
+At hydrostatic-like pore pressure (λ about 0.4), τ is 64 MPa even at μ = 0.1.
+
+**Friction values found** (one search pass, from abstracts and summaries, not read in full):
+- Lizardite gouge, water-saturated, room temperature: μ about 0.15-0.35; end-member lizardite and fibrous serpentine 0.15-0.19 up to 170 °C (Tesei et al. 2018); chrysotile about 0.2 (Moore et al. 1996-1997, USGS Open-File Report 96-702).
+- Antigorite, room temperature: μ about 0.5-0.85; at 500 °C in an antigorite-quartz mixture about 0.22 (a 2024 Cardiff study; pure antigorite strain-hardens, μ over 0.5).
+- At seismic slip rates (Proctor et al. 2014, JGR): bare serpentinite surfaces about 0.1; gouge at 1 m/s 0.39-0.51 at 4-22 MPa. Brantut et al. (2016, Geology) report near-zero friction during dynamic rupture in natural antigorite.
+
+**Fluid-pressure ratio needed** (39 km): for τ ≤ 1 MPa, λ ≥ 0.991 at μ = 0.1, ≥ 0.997 at 0.3, ≥ 0.9987 at 0.7; for τ ≤ 0.2 MPa, λ ≥ 0.998 (μ = 0.1) to 0.9997 (μ = 0.7).
+
+**Reading.**
+1. **A thin Moho slip layer works only if it is almost fully fluid-supported.** To stay under the heating cap (about 0.04-1.0 MPa for an Archean-mean craton) the layer needs λ of about 0.997-0.9998, so pore fluid within 0.02-0.3% of the rock load. That is the most a rock can hold before it hydrofractures. Friction alone, with any laboratory μ, cannot do it.
+2. **A self-lubricating feedback is conceivable but not modelled.** A dehydrating layer can supply fluid near the rock load, and shear heating drives the dehydration. It needs the fluid trapped for 150 days (very low permeability), a continuous supply from the reaction, and no drainage by hydrofracture first.
+3. **The weakest values may not apply at craton Moho temperatures.** Lizardite is the low-temperature serpentine; it probably gives way to antigorite above roughly 300 °C (from memory, not checked), and craton Moho temperatures are 360-590 °C. Antigorite is the stronger serpentine at room temperature (about 0.2 at 500 °C only in one mixture).
+4. **The laboratory tests are far from this setting.** Normal stresses of 4-120 MPa against about 1,070 MPa here, and metres of slip against 900-3,800 km. Slip at 0.3 m/s is in the range where friction weakens further, but not shown at this pressure.
+5. **The heat room is thin for the Archean-mean craton** (60 K; only 3 K at 44 mW/m²), as CMCT Section 25 already found.
+
+**Verdict.** Not ruled out, not shown. The slip layer's stress is no longer an unknown number; it is a condition: near-lithostatic fluid held for 150 days. The next step is a fluid-supply model (dehydration rate, permeability, trapped fluid volume, thermal pressurisation), not more friction data.
+
+**Limits.** Friction values from one search pass of abstracts and summaries; hydrostatic-like λ = 0.4 is an assumption; uniform shear in a 1 or 3 km zone; no conduction out of the zone (about 3.6 m in 150 days, negligible); no latent heat; the antigorite limit at 1 GPa is from conference abstracts (CMCT 21.2); the melting limit of the crust base was not sourced (the wet crust solidus is believed, from memory, to lie above the antigorite limit, so the dehydration limit is used as the tighter one). The dehydration heat source (Wicks and Whittaker 1965) was not readable.
 
 ---
 
@@ -318,7 +360,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 
 | ID | Problem | Status |
 |----|---------|--------|
-| D1 | **H10:** a weak layer and energy source for crust moving hundreds to thousands of km in 150 days | Asthenospheric drag fails by 350× (7.2). Moho slip layer untested (8.4 T2) |
+| D1 | **H10:** a weak layer and energy source for crust moving hundreds to thousands of km in 150 days | Asthenospheric drag fails by 350× (7.2). Moho slip layer: T2 run (Section 8.6): needs pore fluid within about 0.02-0.3% of the rock load; conceivable via dehydration but no fluid-supply model yet |
 | D2 | **H9:** 1.08×10⁸ km² of new floor | Not solved (8.3, v2 6.2) |
 | D3 | **Registration** of craton crust over keels after sliding | T1 run (Section 8.5): match is real (67% on thick lithosphere against a 36% random-landing null) but loose; slides over about 500 km exceed the distance over which it survives. Needs a landing mechanism. LITHO1.0 gives the same picture (70% against 42%) |
 | D4 | Lasting collision uplift, not a transient bump | Not modelled |
@@ -352,7 +394,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 
 1. **Phase A: re-verify carried numbers** as CMCT's Section 14 did: area correction (D9), the v2 logs against their scripts, the 1,111-8,889 m uplift grid.
 2. **Phase B1: registration test T1.** Done with two models (Section 8.5: Afonso et al. 2019 and LITHO1.0, which agree). Next: look for a landing mechanism, or limit slide distances.
-3. **Phase B2: Moho slip-zone stress budget T2** with sourced serpentinite friction.
+3. **Phase B2: Moho slip-zone stress budget T2.** First pass done (Section 8.6). Next: a fluid-supply model (dehydration rate, permeability, trapped fluid, thermal pressurisation) and the heat absorbed by dehydration; read the friction papers in full.
 4. **Phase B3: fragment paths and collisions** from v2's fitted layout at 0.30 m/s: which provinces collide, where, in what order, against today's belts and the 33,900 km of closed contacts.
 5. **Phase B4: H9** (shared with CMCT).
 6. **Phase B5: lasting collision uplift** and the ten peaks.
@@ -365,6 +407,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 Primary (via v2, `Noah's Pangea v2\sources\README.md`): S09 Hasterok et al. (2022) and repository; S13 ETOPO 2022 (NOAA); S14 Mortimer et al. (2017), GSA Today 27(3); S15 Pearson et al. (2021), Nature 596 (abstract and snippets only); S16 Hirth and Kohlstedt (olivine flow laws); S19-S23 secondary pages on sutures and ophiolites (Wikipedia, summarised).
 From v1 (not re-verified): Merdith et al. (2021) *Earth-Science Reviews* (reconstruction, **not used**); Eakins and Sharman (2010/2012) NOAA hypsometry; Advokaat and van Hinsbergen (2024) *Gondwana Research* 128 (Argoland); van Hinsbergen et al. (2019) *Gondwana Research* (Greater Adria); Licht et al. (2022) *Earth-Science Reviews* (Balkanatolia); Gibbons, Whittaker and Müller (2013) and Gibbons et al. (2016) *Gondwana Research* (Gulden Draak and Batavia knolls); Torsvik et al. (2013) and Ashwal et al. (2017) (Mauritia).
 Added 2026-11-25 for T1: Afonso, Salajegheh, Szwillus, Ebbing and Gaina (2019), *Geophysical Journal International* 217, 1602-1628, doi:10.1093/gji/ggz094 (lithospheric thickness grid from the EarthByte GPlates portal; `data/afonso_2019/PROVENANCE.md`). LITHO1.0 (Pasyanos, Masters, Laske and Ma 2014, JGR 119, 2153-2173, doi:10.1002/2013JB010626; from igppweb.ucsd.edu/~gabi/litho1.0.html; `data/litho1_0/PROVENANCE.md`) was used as the second model.
+Added 2026-11-25 for T2 (search summaries only; not read in full): Moore, Lockner and colleagues (1996-1997), USGS Open-File Report 96-702 (`pubs.usgs.gov/of/1996/0702/report.pdf`) and "Strengths of serpentinite gouges at elevated temperatures"; Tesei et al. (2018) on mineralogically controlled serpentinite friction; Reinen and colleagues (lizardite and antigorite rate dependence); a 2024 antigorite-quartz friction study (Cardiff, `orca.cardiff.ac.uk/171470`); Proctor et al. (2014), "Dynamic weakening of serpentinite gouges and bare surfaces at seismic slip rates", JGR Solid Earth; Brantut et al. (2016), Geology. The heat of dehydration (Wicks and Whittaker 1965, American Mineralogist 50) was not readable (the site returned a web page, not the PDF).
 CMCT sections used: 3 (constraints), 4.5, 14.2, 21, 22, 24, 25, 27.5.
 
 ---
