@@ -1,0 +1,58 @@
+T1 REGISTRATION TEST: craton crust against lithosphere thickness
+Model: LITHO1.0 (Pasyanos et al. 2014), LID-BOTTOM minus surface, nearest of 40,962 mesh nodes, on a 450x900 grid at 0.4 deg.
+Lithosphere thickness: min 6 km, mean 107 km, max 323 km (grid values read as metres).
+Total area on grid: 5.103e+08 km2 (sphere: 5.101e+08).
+Cratons: 114 polygons. Provinces: 914.
+
+Craton area on this grid: 4.079e+07 km2 (Section 4 of the DTAT document gives 4.08e7 km2 from polygon geometry).
+
+1. HOW MUCH OF EACH CRATON SITS ON THICK LITHOSPHERE (observed, zero offset)
+   Area-weighted mean lithosphere thickness under cratons: 192 km
+   Share of craton area with lithosphere >= 150 km: 70%   (>= 180 km: 64%)
+   Cratons (count of 114) with at least 50% of their area >= 150 km: 83; at least 80%: 64; under 20%: 17
+   Cratons (count of 114) with at least 50% of their area >= 180 km: 76; at least 80%: 58; under 20%: 23
+   Thinnest-keel cratons (share >= 150 km, area km2), the cases that look decoupled:
+     Longgang Block                     Asia               0%  mean   63 km  area 5.84e+05
+     Nangrim Block                      Asia               0%  mean   72 km  area 1.63e+05
+     Yinshan Block                      Asia               0%  mean   72 km  area 2.13e+05
+     Murzuq Craton                      Africa             0%  mean   60 km  area 4.11e+05
+     Kirgiz-Terskey Arc                 Asia               0%  mean  102 km  area 2.94e+04
+     Yanshan Fold Belt                  Asia               0%  mean   64 km  area 3.40e+05
+     Pend Oreille Block                 North America      0%  mean   63 km  area 4.93e+04
+     Naryn Sedimentary Basin            Asia               0%  mean   87 km  area 2.67e+04
+     Grouse Creek Terrane               North America      0%  mean   52 km  area 2.95e+04
+     Farewell-Innoko-Idono              North America      0%  mean   51 km  area 9.71e+03
+
+2. WHERE THE THICK LITHOSPHERE IS (global)
+   Lithosphere >= 150 km covers 1.182e+08 km2 (23.2% of the Earth): 24% under cratons, 53% under other continental/transitional provinces, 23% outside all provinces (ocean or unmapped).
+   Lithosphere >= 180 km covers 9.275e+07 km2 (18.2% of the Earth): 28% under cratons, 57% under other continental/transitional provinces, 15% outside all provinces (ocean or unmapped).
+   For comparison, 37% of non-craton continental/transitional area is >= 150 km thick (craton: 70%).
+
+3. NULL: the same 114 craton shapes moved rigidly to random places (300 draws, each craton independent)
+   >= 150 km, placed anywhere on the globe: mean 23% (95% range 17-31%); observed 70%
+   >= 150 km, placed only onto continental/transitional provinces: mean 42% (95% range 34-50%); observed 70%
+   >= 180 km, placed anywhere on the globe: mean 18% (95% range 13-25%); observed 64%
+   >= 180 km, placed only onto continental/transitional provinces: mean 36% (95% range 28-44%); observed 64%
+
+4. BEST OFFSET: slide each craton outline up to +-1,500 km; find the shift that puts most of it on >= 150 km lithosphere
+   Median offset of the best placement: 224 km (zero offset means the observed outline is already best).
+   Cratons whose observed position is within 1 point of the best placement found: 30 of 114; within 10 points: 52
+   Offsets at or under 100 km: 44; 100-500 km: 39; over 500 km: 31
+   Area-weighted mean share >= 150 km at zero offset: 70%; at the best offset: 97% (a search over 961 shifts always finds something at least as good, so the second figure is an upper bound).
+
+   How the share >= 150 km falls off as the craton outline is moved away from where it is (area-weighted mean over cratons and directions):
+     0 km (observed)     69.7%
+     1-100 km            69.2%
+     100-200 km          68.3%
+     200-300 km          65.9%
+     300-500 km          60.9%
+     500-800 km          54.5%
+     800-1,100 km        47.1%
+   (offset bins are measured on a 100 km shift grid, so the 1-100 km bin holds shifts of 100 km only; 1,100-1,500 km shifts are in the search but not binned.)
+
+LIMITS
+   The thickness grid is a model (Afonso et al. 2019: joint inversion of seismic, gravity, elevation, heat-flow and petrological data).
+   Some of its structure may follow the surface geology it was constrained by, so the match may be partly built in; a second, independent
+   model (for example LITHO1.0) has not been run. No ages are used (P1). Grid stride 0.4 deg; sampled up to 3,000 points per craton;
+   the offset search is a flat-earth shift, adequate to a few degrees but not at high latitude; the null moves each craton as a rigid shape.
+   'Thick keel' thresholds follow P9's 150-250 km; the mapping from lithosphere thickness to keel is the model's, not a measurement of a chemical keel.

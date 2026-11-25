@@ -197,7 +197,7 @@ The heat in the slip zone depends on the shear stress and the distance, not on s
 5. **Sequence.** Whether the slide, the collapse (CMCT) and the collisions are one event, or follow each other, is not decided (Section 12).
 
 ### 8.4 Tests for this hypothesis (none run)
-- **T1 Registration.** Compare the 114 craton polygons (Hasterok) with a lithosphere-thickness map. Measure how often craton crust sits over a thick keel and how far the outlines are offset. **Run 2026-11-25 against the Afonso et al. (2019) grid; result in Section 8.5.** A second, independent model (LITHO1.0) has not been run.
+- **T1 Registration.** Compare the 114 craton polygons (Hasterok) with a lithosphere-thickness map. Measure how often craton crust sits over a thick keel and how far the outlines are offset. **Run 2026-11-25 against the Afonso et al. (2019) grid; result in Section 8.5, repeated with LITHO1.0, which agrees.**
 - **T2 Slip-stress budget.** For a Moho slip zone of 1-3 km: the largest stress that avoids melting, and whether serpentinite friction with near-lithostatic pore pressure is that low (friction data not yet sourced).
 - **T3 Gap and H9.** Whether any version closes the 1.08×10⁸ km² gap without making new floor hot.
 - **T4 Isostatic effect of landing on a keel,** with the net-density sign from CMCT 14.2.
@@ -221,7 +221,22 @@ The heat in the slip zone depends on the shear stress and the distance, not on s
 3. **What it means for the fixed-keel slip.** Not contradicted: the match is too loose to rule out slides of tens to a few hundred km. Not supported either: DTAT's slides of 500-3,800 km are longer than the distance over which the match survives (a 931 km offset gives about 42%, close to the 36% random level). The observed 67% therefore needs a landing mechanism, slides of a few hundred km or less, or pre-slide positions that were already matched. Section 8.3 item 1 remains open as a mechanism problem, not an observation problem.
 4. **The test cannot say that the craton crust and keel formed together.** It measures only that they coincide today.
 
-**Limits.** One model (Afonso et al. 2019) is a joint inversion of seismic, gravity, elevation, heat-flow and petrological data and may follow the surface geology it was constrained by, so part of the match could be built in. A second, independent model (LITHO1.0) has not been run. The thickness-to-keel mapping is the model's, not a measurement of chemical depletion. Grid stride 0.4°; up to 3,000 points sampled per craton; the offset search is a flat-earth shift. The "best offset" search over 961 shifts always finds a good placement, so its 96% figure is only an upper bound.
+**LITHO1.0 check (same day).** `T1_MODEL=litho1 python scripts/registration_test.py`; log `results/registration_test_log_litho1.txt`, table `results/registration_test_cratons_litho1.csv`; model: Pasyanos et al. (2014), the author's native files (`data/litho1_0/`, see its `PROVENANCE.md`), lithosphere thickness taken as LID-BOTTOM depth minus the model's surface, nearest mesh node (up to 75 km away).
+
+| Measure | Afonso et al. (2019) | LITHO1.0 |
+|---------|----------------------|----------|
+| Craton area on lithosphere ≥ 150 km / ≥ 180 km | 67% / 41% | **70% / 64%** |
+| Mean thickness under cratons | 156 km | 192 km |
+| Cratons with at least half their area ≥ 150 km | 77 of 114 | 83 of 114 |
+| Null, random landing on continental/transitional provinces (≥ 150 km) | 36% (28-44%) | **42% (34-50%)** |
+| Null, random landing anywhere (≥ 150 km) | 16% (10-22%) | 23% (17-31%) |
+| Share of ≥ 150 km lithosphere under cratons / other provinces / elsewhere | 34% / 65% / 1% | 24% / 53% / 23% |
+| Share ≥ 150 km at 0 / 300-500 / 800-1,100 km offset | 67 / 56 / 40% | 70 / 61 / 47% |
+| Median best offset (±1,500 km) | 300 km | 224 km |
+
+**Reading of the check.** The two models agree on the finding: craton crust sits on thick lithosphere about 25-30 points more often than random landing on continental crust would give, and the match falls toward the random level over about 1,000 km. They differ in detail: LITHO1.0 is thicker (mean 192 km under cratons) and has thick lithosphere under 23% of its ≥ 150 km area outside all mapped provinces (old ocean floor), which Afonso et al. does not (1%), so a thickness threshold alone is model-dependent. The two share inputs (seismic surface-wave data), so this is a check of method and model choice, not of independent physics. **The conclusion in Section 8.5 stands: a real but loose match; slides longer than a few hundred km need a landing mechanism.**
+
+**Limits.** Each model is an inversion of present-day data (seismic, and in Afonso et al. also gravity, elevation, heat-flow and petrological data) and may follow the surface geology it was constrained by, so part of the match could be built in. The thickness-to-keel mapping is the model's, not a measurement of chemical depletion. Grid stride 0.4°; up to 3,000 points sampled per craton; the offset search is a flat-earth shift. The "best offset" search over 961 shifts always finds a good placement, so its 96% figure is only an upper bound.
 
 ---
 
@@ -305,7 +320,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 |----|---------|--------|
 | D1 | **H10:** a weak layer and energy source for crust moving hundreds to thousands of km in 150 days | Asthenospheric drag fails by 350× (7.2). Moho slip layer untested (8.4 T2) |
 | D2 | **H9:** 1.08×10⁸ km² of new floor | Not solved (8.3, v2 6.2) |
-| D3 | **Registration** of craton crust over keels after sliding | T1 run (Section 8.5): match is real (67% on thick lithosphere against a 36% random-landing null) but loose; slides over about 500 km exceed the distance over which it survives. Needs a landing mechanism. LITHO1.0 not run |
+| D3 | **Registration** of craton crust over keels after sliding | T1 run (Section 8.5): match is real (67% on thick lithosphere against a 36% random-landing null) but loose; slides over about 500 km exceed the distance over which it survives. Needs a landing mechanism. LITHO1.0 gives the same picture (70% against 42%) |
 | D4 | Lasting collision uplift, not a transient bump | Not modelled |
 | D5 | Fragment paths: do the specific provinces actually collide where today's belts are, and not where there are none | Not tested beyond 16 misfits (7 of which end away from their block) |
 | D6 | Whether the 33.3% submerged crust matches the uncollided fraction | Not tested |
@@ -336,7 +351,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 ## 15. Plan (nothing started)
 
 1. **Phase A: re-verify carried numbers** as CMCT's Section 14 did: area correction (D9), the v2 logs against their scripts, the 1,111-8,889 m uplift grid.
-2. **Phase B1: registration test T1.** First pass done (Section 8.5, Afonso et al. 2019). Next: repeat with LITHO1.0 as an independent model, and look for a landing mechanism.
+2. **Phase B1: registration test T1.** Done with two models (Section 8.5: Afonso et al. 2019 and LITHO1.0, which agree). Next: look for a landing mechanism, or limit slide distances.
 3. **Phase B2: Moho slip-zone stress budget T2** with sourced serpentinite friction.
 4. **Phase B3: fragment paths and collisions** from v2's fitted layout at 0.30 m/s: which provinces collide, where, in what order, against today's belts and the 33,900 km of closed contacts.
 5. **Phase B4: H9** (shared with CMCT).
@@ -349,7 +364,7 @@ CMCT Section 23 holds the same table from the other side. Each file states what 
 
 Primary (via v2, `Noah's Pangea v2\sources\README.md`): S09 Hasterok et al. (2022) and repository; S13 ETOPO 2022 (NOAA); S14 Mortimer et al. (2017), GSA Today 27(3); S15 Pearson et al. (2021), Nature 596 (abstract and snippets only); S16 Hirth and Kohlstedt (olivine flow laws); S19-S23 secondary pages on sutures and ophiolites (Wikipedia, summarised).
 From v1 (not re-verified): Merdith et al. (2021) *Earth-Science Reviews* (reconstruction, **not used**); Eakins and Sharman (2010/2012) NOAA hypsometry; Advokaat and van Hinsbergen (2024) *Gondwana Research* 128 (Argoland); van Hinsbergen et al. (2019) *Gondwana Research* (Greater Adria); Licht et al. (2022) *Earth-Science Reviews* (Balkanatolia); Gibbons, Whittaker and Müller (2013) and Gibbons et al. (2016) *Gondwana Research* (Gulden Draak and Batavia knolls); Torsvik et al. (2013) and Ashwal et al. (2017) (Mauritia).
-Added 2026-11-25 for T1: Afonso, Salajegheh, Szwillus, Ebbing and Gaina (2019), *Geophysical Journal International* 217, 1602-1628, doi:10.1093/gji/ggz094 (lithospheric thickness grid from the EarthByte GPlates portal; `data/afonso_2019/PROVENANCE.md`). LITHO1.0 (Pasyanos et al. 2014, JGR 119, doi:10.1002/2013JB010626) is the planned independent check and has not been downloaded.
+Added 2026-11-25 for T1: Afonso, Salajegheh, Szwillus, Ebbing and Gaina (2019), *Geophysical Journal International* 217, 1602-1628, doi:10.1093/gji/ggz094 (lithospheric thickness grid from the EarthByte GPlates portal; `data/afonso_2019/PROVENANCE.md`). LITHO1.0 (Pasyanos, Masters, Laske and Ma 2014, JGR 119, 2153-2173, doi:10.1002/2013JB010626; from igppweb.ucsd.edu/~gabi/litho1.0.html; `data/litho1_0/PROVENANCE.md`) was used as the second model.
 CMCT sections used: 3 (constraints), 4.5, 14.2, 21, 22, 24, 25, 27.5.
 
 ---

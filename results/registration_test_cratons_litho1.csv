@@ -1,0 +1,115 @@
+craton,continent,area_km2_grid,mean_lab_km,share_ge150,share_ge180,zero_offset_ge150,best_offset_ge150,best_offset_km
+Limpopo Belt,Africa,183403,250.4,0.970,0.970,0.970,1.000,100
+Tanzania Craton,Africa,489502,173.0,0.737,0.379,0.738,1.000,632
+Eglab Shield,Africa,273978,252.2,0.974,0.974,0.974,1.000,100
+Uganda Craton,Africa,95084,154.5,0.625,0.167,0.625,1.000,894
+Rwenzori Block,Africa,65391,124.9,0.152,0.121,0.152,1.000,400
+Gabon Craton,Africa,182245,248.4,0.967,0.967,0.967,1.000,100
+West Congo and Kimezian Belts,Africa,291693,203.8,0.731,0.731,0.730,1.000,412
+Gabon Belt,Africa,178185,163.7,0.623,0.500,0.622,1.000,316
+East Congo Mobile Belt,Africa,209790,234.5,0.887,0.764,0.887,1.000,141
+Antongil Block,Africa,111535,98.6,0.442,0.000,0.441,1.000,900
+Reguibat Rise,Africa,164421,221.9,0.899,0.899,0.900,1.000,224
+Angolan Shield,Africa,918264,126.4,0.327,0.221,0.329,1.000,1400
+Kasai Craton,Africa,838865,214.5,0.913,0.853,0.914,1.000,539
+Kibaran Belt,Africa,93045,144.8,0.425,0.425,0.426,1.000,316
+Cuvette Centrale,Africa,979596,238.2,0.889,0.877,0.889,0.974,200
+Al Kufrah Craton,Africa,1080019,75.1,0.090,0.079,0.093,0.736,922
+Kenema-Man Craton,Africa,299946,148.5,0.365,0.326,0.366,1.000,424
+Leo Rise,Africa,1343576,240.3,0.907,0.891,0.907,0.923,100
+Napier Complex,Antarctica,82825,243.5,1.000,1.000,1.000,1.000,0
+Tarim Basin,Asia,654353,117.0,0.345,0.223,0.348,0.864,1565
+Tungus Province,Asia,1304689,218.1,0.837,0.834,0.849,0.990,447
+Anabar Shield,Asia,70009,215.0,0.991,0.831,0.990,1.000,0
+Olenek Province,Asia,375532,179.9,0.727,0.536,0.728,1.000,447
+Yinshan Block,Asia,213130,72.2,0.000,0.000,0.000,0.681,1217
+Sichuan Basin,Asia,187881,189.7,0.865,0.708,0.864,1.000,141
+Magan Terrane,Asia,640829,233.2,0.865,0.865,0.894,1.000,316
+Aldan Shield,Asia,534952,188.7,0.721,0.672,0.730,1.000,424
+Stanovoi Belt,Asia,482541,77.5,0.024,0.024,0.025,1.000,762
+Nangrim Block,Asia,162613,71.9,0.000,0.000,0.000,0.991,1860
+Longgang Block,Asia,583958,62.9,0.000,0.000,0.000,0.472,1273
+Pilbara Craton,Australia,261595,211.0,0.943,0.815,0.944,1.000,100
+Pine Creek Inlier,Australia,150908,253.0,1.000,1.000,1.000,1.000,0
+Eastern Yilgarn Craton,Australia,245750,286.6,1.000,1.000,1.000,1.000,0
+Western Yilgarn Craton,Australia,432983,242.7,0.962,0.859,0.960,1.000,100
+Gawler Craton,Australia,534887,234.2,0.890,0.890,0.886,1.000,200
+Karelia Craton,Europe,498107,221.2,0.748,0.746,0.717,1.000,500
+Kola Craton,Europe,571240,236.6,0.890,0.890,0.880,1.000,224
+Volgo-Uralia Craton,Europe,923400,251.7,1.000,1.000,1.000,1.000,0
+Ukranian Craton,Europe,479865,191.4,0.730,0.701,0.733,1.000,632
+Southern Granulite Terrane,India and Middle East,124499,206.9,0.984,0.860,0.984,1.000,100
+Singhbhum Craton,India and Middle East,53403,201.1,1.000,0.828,1.000,1.000,0
+Bastar Craton,India and Middle East,156109,195.0,0.700,0.700,0.702,1.000,200
+Chuddapah Basin,India and Middle East,42061,195.0,1.000,0.819,1.000,1.000,0
+Closepet Batholith,India and Middle East,15387,200.8,1.000,0.876,1.000,1.000,0
+Wanni Complex,India and Middle East,23535,133.7,0.334,0.334,0.333,1.000,141
+Highland Complex,India and Middle East,27527,167.8,0.572,0.501,0.571,1.000,200
+Western Dharwar Craton,India and Middle East,149513,157.2,0.694,0.180,0.692,1.000,283
+Eastern Dharwar Craton,India and Middle East,398305,169.7,0.624,0.401,0.621,1.000,806
+Trivandrum-Nagercoil Block,India and Middle East,17621,219.2,1.000,1.000,1.000,1.000,0
+Slave Craton,North America,449534,256.3,0.989,0.989,0.985,1.000,100
+North Atlantic Craton,North America,318224,142.3,0.580,0.383,0.581,1.000,632
+Hearne Province,North America,812007,274.5,0.983,0.972,0.985,1.000,100
+Foxe Orogen,North America,218380,235.7,0.991,0.988,0.990,1.000,100
+Riviere-Arnauld Terrane,North America,151600,259.4,1.000,1.000,1.000,1.000,0
+Hudson Bay Terrane,North America,367638,268.0,1.000,1.000,1.000,1.000,0
+North Caribou Terrane,North America,583362,277.8,1.000,1.000,1.000,1.000,0
+Winnipeg River Terrane,North America,111044,231.0,1.000,1.000,1.000,1.000,0
+Western Wabigoon Terrane,North America,109835,239.0,1.000,0.976,1.000,1.000,0
+Marmion Terrane,North America,14261,276.7,1.000,1.000,1.000,1.000,0
+Quetico-Opatica Metasedimentary Belt,North America,169782,232.6,0.955,0.918,0.955,1.000,100
+Minnesota River Valley Terrane,North America,146893,245.7,1.000,1.000,1.000,1.000,0
+Eastern Wabigoon Terrane,North America,35559,242.0,1.000,1.000,1.000,1.000,0
+Ashuanipi Metasedimentary Belt,North America,93341,209.1,0.886,0.886,0.889,1.000,100
+English River-Opinaca Metasedimentary Belt,North America,192374,258.1,1.000,1.000,1.000,1.000,0
+Chesterfield Block,North America,54437,269.9,1.000,1.000,1.000,1.000,0
+Slave Platform,North America,355265,268.2,1.000,1.000,1.000,1.000,0
+Queen Maude Block,North America,142261,263.5,1.000,1.000,1.000,1.000,0
+Snowbird Tectonic Zone,North America,96091,297.3,1.000,1.000,1.000,1.000,0
+Penokean Orogen,North America,141887,253.2,1.000,1.000,1.000,1.000,0
+Wawa-Abitibi Terrane,North America,401273,218.7,0.865,0.757,0.864,1.000,200
+Rae Province,North America,1205845,254.0,0.930,0.901,0.915,1.000,316
+Sa� Lu�s Craton,South America,93080,214.1,1.000,1.000,1.000,1.000,0
+Media Coreau Domain,South America,128178,211.8,1.000,0.954,1.000,1.000,0
+Borborema Province,South America,569792,178.5,0.713,0.682,0.714,1.000,400
+Parnaiba Block,South America,264035,226.7,0.918,0.918,0.918,1.000,141
+Sa� Francisco Craton,South America,799803,212.8,0.966,0.801,0.966,1.000,361
+Tocantins Province,South America,422678,224.9,1.000,0.950,1.000,1.000,0
+Rio de la Plata Craton,South America,585089,117.2,0.055,0.022,0.057,0.989,1700
+Bundelkhand Craton,India and Middle East,310146,206.8,0.906,0.650,0.908,1.000,224
+Eastern Yangtze Craton,Asia,510184,132.7,0.394,0.251,0.399,0.653,283
+Zimbabwe Craton,Africa,284076,183.1,0.569,0.523,0.572,1.000,424
+Ara�ua� Belt (north),South America,368215,201.6,0.850,0.820,0.848,1.000,200
+Grunehogna,Antarctica,189370,174.1,0.714,0.426,0.722,1.000,300
+Ruker Craton,Antarctica,646194,247.8,1.000,1.000,1.000,1.000,0
+Kaapvaal Craton,Africa,716506,206.2,0.862,0.698,0.862,0.995,200
+LATEA Metacraton,Africa,1146652,88.4,0.106,0.056,0.110,0.940,1118
+Yanshan Fold Belt,Asia,339930,63.8,0.000,0.000,0.000,0.569,860
+Nain Province,North America,57596,267.6,1.000,1.000,1.000,1.000,0
+Central Amazonian Belt,South America,885602,240.1,0.926,0.919,0.927,1.000,300
+Laurentia Province,Europe,173297,108.2,0.294,0.200,0.305,0.994,1500
+Naryn Sedimentary Basin,Asia,26731,86.9,0.000,0.000,0.000,1.000,728
+Napier Complex (reworked),Antarctica,38115,233.0,1.000,1.000,1.000,1.000,0
+Embomou Craton,Africa,464846,208.3,0.770,0.770,0.770,1.000,632
+Kibaran Belt,Africa,378519,121.3,0.353,0.285,0.354,1.000,640
+Wyoming Craton,North America,506164,113.2,0.274,0.211,0.272,1.000,806
+Pend Oreille Block,North America,49341,62.8,0.000,0.000,0.000,1.000,412
+Medicine Hat Terrane,North America,146984,156.7,0.536,0.413,0.540,1.000,300
+Grouse Creek Terrane,North America,29541,51.5,0.000,0.000,0.000,1.000,700
+Mojavia,North America,560432,61.6,0.019,0.000,0.020,1.000,1985
+Himalayan Foreland Basin,India and Middle East,161670,210.4,0.934,0.661,0.935,1.000,100
+Farewell-Innoko-Idono,North America,9708,50.6,0.000,0.000,0.000,1.000,500
+Farewell-Kilbuck,North America,4977,65.1,0.000,0.000,0.000,1.000,510
+Mawson Craton,Antarctica,1228608,231.7,0.953,0.920,0.970,1.000,100
+Central Transantarctic Mountains,Antarctica,246353,134.8,0.436,0.436,0.390,1.000,400
+Pharusian Belt,Africa,946526,119.1,0.283,0.174,0.277,0.998,990
+Murzuq Craton,Africa,411454,60.3,0.000,0.000,0.000,1.000,1703
+Rinkinian Orogen,North America,701554,216.7,0.859,0.849,0.878,1.000,539
+East Rae,North America,665284,241.1,0.999,0.922,0.999,0.999,0
+Nagssugtoqidian Mobile Belt,North America,286676,152.9,0.624,0.512,0.635,1.000,412
+Voronezh Massif,Europe,482630,238.9,0.816,0.816,0.821,1.000,412
+Itremo Block,Africa,83854,81.4,0.225,0.202,0.222,1.000,600
+Antenanarivo Block,Africa,305288,101.3,0.336,0.099,0.333,0.994,707
+Kirgiz-Terskey Arc,Asia,29439,101.9,0.000,0.000,0.000,1.000,1005
+Vestfold Craton,Antarctica,166197,208.7,0.933,0.933,0.936,1.000,200

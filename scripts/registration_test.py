@@ -31,6 +31,9 @@ from shapely.geometry import shape
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 V2 = os.path.normpath(os.path.join(ROOT, "..", "Noah's Pangea v2", "data", "hasterok_2022"))
 NC = os.path.join(ROOT, "data", "afonso_2019", "lithospheric-thickness-griddata.nc")
+# Thickness model: "afonso" (default) or "litho1" (run scripts/build_litho1_grid.py first). Set with T1_MODEL.
+MODEL = os.environ.get("T1_MODEL", "afonso")
+SUFFIX = "" if MODEL == "afonso" else "_" + MODEL
 os.makedirs(os.path.join(ROOT, "results"), exist_ok=True)
 RNG = np.random.default_rng(1656)
 R_EARTH = 6371.0
@@ -56,6 +59,10 @@ with h5py.File(NC, "r") as f:
 lab = lab_full[::STRIDE, ::STRIDE]
 lat = lat_full[::STRIDE]
 lon = lon_full[::STRIDE]
+if MODEL == "litho1":
+    z = np.load(os.path.join(ROOT, "data", "litho1_0", "litho1_lab_0.4deg.npz"))
+    assert STRIDE == 2 and np.allclose(z["lat"], lat) and np.allclose(z["lon"], lon)
+    lab = z["lab_km"]
 nlat, nlon = lab.shape
 LON, LAT = np.meshgrid(lon, lat)
 dlat = np.radians(lat[1] - lat[0])
@@ -63,7 +70,10 @@ dlon = np.radians(lon[1] - lon[0])
 cell_area = (R_EARTH ** 2) * dlat * dlon * np.cos(np.radians(LAT))      # km2 per node
 cell_area = np.clip(cell_area, 0, None)
 p("T1 REGISTRATION TEST: craton crust against lithosphere thickness")
-p(f"Grid: Afonso et al. (2019), {lab_full.shape[0]}x{lab_full.shape[1]} at 0.2 deg, used every {STRIDE}nd node ({nlat}x{nlon}).")
+if MODEL == "litho1":
+    p(f"Model: LITHO1.0 (Pasyanos et al. 2014), LID-BOTTOM minus surface, nearest of 40,962 mesh nodes, on a {nlat}x{nlon} grid at 0.4 deg.")
+else:
+    p(f"Grid: Afonso et al. (2019), {lab_full.shape[0]}x{lab_full.shape[1]} at 0.2 deg, used every {STRIDE}nd node ({nlat}x{nlon}).")
 p(f"Lithosphere thickness: min {lab.min():.0f} km, mean {np.average(lab, weights=cell_area):.0f} km, max {lab.max():.0f} km (grid values read as metres).")
 p(f"Total area on grid: {cell_area.sum():.3e} km2 (sphere: {4*np.pi*R_EARTH**2:.3e}).")
 
@@ -276,8 +286,8 @@ p("   model (for example LITHO1.0) has not been run. No ages are used (P1). Grid
 p("   the offset search is a flat-earth shift, adequate to a few degrees but not at high latitude; the null moves each craton as a rigid shape.")
 p("   'Thick keel' thresholds follow P9's 150-250 km; the mapping from lithosphere thickness to keel is the model's, not a measurement of a chemical keel.")
 
-open(os.path.join(ROOT, "results", "registration_test_log.txt"), "w", encoding="utf-8").write("\n".join(out) + "\n")
-with open(os.path.join(ROOT, "results", "registration_test_cratons.csv"), "w", newline="", encoding="utf-8") as fh:
+open(os.path.join(ROOT, "results", f"registration_test_log{SUFFIX}.txt"), "w", encoding="utf-8").write("\n".join(out) + "\n")
+with open(os.path.join(ROOT, "results", f"registration_test_cratons{SUFFIX}.csv"), "w", newline="", encoding="utf-8") as fh:
     w = csv.writer(fh)
     w.writerow(["craton", "continent", "area_km2_grid", "mean_lab_km", "share_ge150", "share_ge180", "zero_offset_ge150",
                 "best_offset_ge150", "best_offset_km"])
