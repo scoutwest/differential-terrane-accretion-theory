@@ -19,7 +19,7 @@
 - The slip layer and energy that let crust move (H10) and the origin of the ocean floor left behind (H9) (Sections 7-8).
 
 **What DTAT is not for.**
-- It is not the cause of the flood. Submergence is CKDT's (collapse of a layer at the crust base, released water). DTAT's v1 text assumed a keel-loss submergence (old CKDT) that CKDT has struck (P9). DTAT now starts from "the land is already submerged, by whatever CKDT supplies."
+- It is not the cause of the flood. Submergence is CKDT's (collapse of a layer at the crust base, released water). DTAT's v1 text assumed a keel-loss submergence that CKDT has struck (P9). DTAT now starts from "the land is already submerged, by whatever CKDT supplies."
 - It does not supply the water or the heat budget. Those are CKDT's (Section 3).
 - It does not cover the post-Flood ice age. That is a separate planned study (CKDT Section 27.5).
 
@@ -287,7 +287,7 @@ At hydrostatic-like pore pressure (λ about 0.4), τ is 64 MPa even at μ = 0.1.
 ### 9.1 What was carried
 - **The ten highest peaks** lie in the Himalayan Orogenic Belt (nine) and the Karakoram Province (K2), inside the Eurasian plate's Tibet and Pamir deformation zones (v2 `phase2b_peaks_provinces.txt`). That is where India meets Eurasia in the fit. DTAT's collision uplift has a concrete target: **8,091-8,849 m from a pre-Flood relief below 610 m.**
 - **India is the weak block in the fit** (Section 5): 16% area-weighted overlap, "partly physical" since its northern edge is crushed into Eurasia today.
-- **Collision-driven uplift (v1 13.7-13.8, flagged).** v1 converts convergence into surface uplift at 1-2% of the convergence distance. For 500, 1,000 and 2,000 km this gives 1,111-2,222, 2,222-4,444 and 4,444-8,889 m, v1 compared this with its own 1,000-6,000 m keel-loss subsidence target, which is withdrawn with old CKDT. The uplift now required is set by the peaks (about 7.5-8.2 km above a pre-Flood relief of under 610 m) and by the recession water budget. v1 also computed that the project's own tracked India-Asia convergence over a 74-day window (39 km) gives only about 130 m, which is local and too small. **Flagged:** the 1-2% ratio came from Himalaya-Tibet mainstream convergence totals, which depend on deep-time reconstructions (P1). The factor from thickening to surface uplift (about 1/4.5 in v1's numbers) was not re-derived. Treat the ratio as a borrowed, unverified number.
+- **Collision-driven uplift (v1 13.7-13.8, flagged).** v1 converts convergence into surface uplift at 1-2% of the convergence distance. For 500, 1,000 and 2,000 km this gives 1,111-2,222, 2,222-4,444 and 4,444-8,889 m, v1 compared this with its own 1,000-6,000 m keel-loss subsidence target, which is withdrawn along with the keel-loss mechanism. The uplift now required is set by the peaks (about 7.5-8.2 km above a pre-Flood relief of under 610 m) and by the recession water budget. v1 also computed that the project's own tracked India-Asia convergence over a 74-day window (39 km) gives only about 130 m, which is local and too small. **Flagged:** the 1-2% ratio came from Himalaya-Tibet mainstream convergence totals, which depend on deep-time reconstructions (P1). The factor from thickening to surface uplift (about 1/4.5 in v1's numbers) was not re-derived. Treat the ratio as a borrowed, unverified number.
 
 ### 9.2 What is still open (carried from v1, unresolved)
 - Why a collision gives **lasting** uplift rather than a transient bump that isostasy relaxes. No relaxation dynamics are modelled.
@@ -329,7 +329,7 @@ v1 built a hypsometric volume-conservation solver (area against elevation, bisec
 | Lost-continent candidates (Argoland, Greater Adria, Balkanatolia, Gulden Draak Knoll, Batavia Knoll; Mauritia already in the dataset as Mauritius Remnant) | v1 prompt 14; 13.11.3 | **Names only, unplaced** | Real literature candidates, but v1 placed them using Merdith rotations; areas of the last two (15,000 km² each) are v1 illustrative guesses |
 | Hypsometric water-level solver | v1 13.9 | **Tool carried, results not** | Section 10 |
 | Damped-oscillator uplift curve | v1 13.8.6, Phase 4 | **Not carried into verdicts** | Stylistic; real GIA is monotonic (v1's own finding) |
-| Keel-loss subsidence (old CKDT) as DTAT's starting point | v1 | **Not carried** | Struck in CKDT under P9 |
+| Keel-loss subsidence as DTAT's starting point | v1 | **Not carried** | Struck in CKDT under P9 |
 | v1 plate-motion animation, globe, renders, UI work, 110 regression tests | v1 Phases 3-10, 13.10 | **Not carried** | Presentation layer built on the 7-plate and 647-fragment layouts. Still in `Noah's Pangea v1` |
 | Fixed-keel crust slip | discussion 2026-11-25 | **New, untested** | Section 8 |
 
